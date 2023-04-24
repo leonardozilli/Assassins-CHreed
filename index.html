@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knowledge Management</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <section class="main_menu">
+    <div class="title">
+      <h1>KOCH untitled project</h1>
+    </div>
+    <img src="/images/bg_frame_1.png" class="bg_frame" id="frame1" alt="">
+    <img src="/images/bg_frame_2.png" class="bg_frame" id="frame2" alt="">
+    <div class="menu">
+      <ul>
+        <li class="menu_item" id="menu_item2">
+          <div class="main_item">
+            <img src="images/menu_item2.png"></img><a class="menu_label selected"
+              onclick="accordion(this)" onmouseover=hover(this)>THE PROJECT <svg width="0.6em" height="0.7rem" viewBox="-2.5 -5 75 60" preserveAspectRatio="none" style="display: inline-block; vertical-align: middle;">
+              <path d="M0,0 l35,50 l35,-50" fill="none" stroke="black" stroke-linecap="round" stroke-width="5" /></svg></a>
+          </div>
+          <ul class="menu_subitems " id="menu_subitem2" style="display: none;">
+            <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label subSelected" onmouseover=subHover(this) onclick="scrollSmoothTo('domain')">The Domain</a></li>
+            <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label" onmouseover=subHover(this) onclick="scrollSmoothTo('items')">The Items</a></li>
+          </ul>
+        </li>
+        <li class="menu_item" id="menu_item1">
+          <div class="main_item">
+            <img src="images/menu_item2.png"></img><a class="menu_label"
+              onclick="accordion(this)" onmouseover=hover(this)>KN. ORGANIZATION <svg width="0.6em" height="0.7rem" viewBox="-2.5 -5 75 60" preserveAspectRatio="none" style="display: inline-block; vertical-align: middle;">
+              <path d="M0,0 l35,50 l35,-50" fill="none" stroke="black" stroke-linecap="round" stroke-width="5"/></svg></a>
+          </div>
+          <div>
+            <ul class="menu_subitems " id="menu_subitem1" style="display: none;">
+              <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label subSelected" onmouseover=subHover(this) onclick="scrollSmoothTo('')">Conceptual Map</a></li>
+              <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label" onmouseover=subHover(this)>E/R Model</a></li>
+              <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label" onmouseover=subHover(this) onclick="scrollSmoothTo('metadata')">Metadata Analysis</a></li>
+              <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label" onmouseover=subHover(this)>Theoretical Model</a></li>
+              <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label" onmouseover=subHover(this)>Conceptual Model</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu_item" id="menu_item0" >
+          <div class="main_item">
+            <img src="images/menu_item2.png"></img><a class="menu_label"
+              onclick="accordion(this)" onmouseover=hover(this)>KN. REPRESENTATION <svg width="0.6em" height="0.7rem" viewBox="-2.5 -5 75 60" preserveAspectRatio="none" style="display: inline-block; vertical-align: middle;">
+              <path d="M0,0 l35,50 l35,-50" fill="none" stroke="black" stroke-linecap="round" stroke-width="5"/></svg></a>
+          </div>
+          <div>
+            <ul class="menu_subitems " id="menu_subitem0" style="display: none;">
+              <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label subSelected" onmouseover=subHover(this)>RDF Production</a></li>
+              <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label" onmouseover=subHover(this)>RDF Visualization</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="subtitle">
+      <h5>©Unibo. 2022-2023</h5>
+    </div>
+  </section>
+  <section class="domain" id="domain">
+    <div class="sectitle">
+      <span>
+        <svg class="sectitle_fig" xmlns="http://www.w3.org/2000/svg" viewBox="-0.1 -3.1 12.2 8.2">
+          <path d="M 0 0 L 10 -3 L 12 2 L 2 5 L 0 0" stroke="#cb4c48" stroke-width="0.1" fill="#6d2d2e"/>
+        </svg>
+        <svg width="1rem" height="1rem" viewBox="-0.2 -2.1 4.4 4.2" style="margin: 0 1rem 0 4rem; display: inline-block; vertical-align: middle;">
+              <path d="M 0 0 M 2 1 L 1 0 L 2 -1 L 3 0 L 2 1 M 2 2 L 4 0 L 2 -2 L 0 0 L 2 2" fill="white"/></svg><h3>THE DOMAIN</h3></span>
+    </div>
+  </section>
+  <section id="items">
+    <div class="sectitle">
+      <span>
+        <svg class="sectitle_fig" xmlns="http://www.w3.org/2000/svg" viewBox="-0.1 -3.1 12.2 8.2">
+          <path d="M 0 0 L 10 -3 L 12 2 L 2 5 L 0 0" stroke="#cb4c48" stroke-width="0.1" fill="#6d2d2e"/>
+        </svg>
+        <svg width="1rem" height="1rem" viewBox="-0.2 -2.1 4.4 4.2" style="margin: 0 1rem 0 4rem; display: inline-block; vertical-align: middle;">
+              <path d="M 0 0 M 2 1 L 1 0 L 2 -1 L 3 0 L 2 1 M 2 2 L 4 0 L 2 -2 L 0 0 L 2 2" fill="white"/></svg><h3>THE ITEMS</h3></span>
+    </div>
+    <div class="carousel">
+      <div class="carousel_items">
+        <div id='item_1' class="carousel_item active">
+          <img src="images/items/Borrani_ritrovamento_del_cadavere.jpg">
+        </div>
+        <div id='item_2' class="carousel_item next">
+          <img src="images/items/AC2_soundtrack.jpg">
+        </div>
+        <div id='item_3' class="carousel_item">
+          <img src="images/items/codex_optimus.jpg">
+        </div>
+        <div id='item_4' class="carousel_item">
+          <img src="images/items/AC_lineage.jpg">
+        </div>
+        <div id='item_5' class="carousel_item">
+          <img src="images/items/GamePro.jpg">
+        </div>
+        <div id='item_6' class="carousel_item">
+          <img src="images/items/Venetian_falchion.jpg">
+        </div>
+        <div id='item_7' class="carousel_item">
+          <img src="images/items/Palazzo_vecchio.jpg">
+        </div>
+        <div id='item_8' class="carousel_item">
+          <img src="images/items/Perseus.jpg">
+        </div>
+        <div id='item_9' class="carousel_item">
+          <img src="images/items/AC_renaissance.jpg">
+        </div>
+        <div id='item_10' class="carousel_item prev">
+          <img src="images/items/physical_copy.jpg">
+        </div>
+        <div class="button-container">
+          <div class="button"><svg xmlns="http://www.w3.org/2000/svg" height="20px" width="auto" viewBox="0 -5 6 10">
+            <path d="M 0 0 L 4 -5 L 6 -5 L 2 0 L 6 5 L 4 5 L 0 0" fill="white"/></svg>
+          </div>
+          <div class="button"><svg xmlns="http://www.w3.org/2000/svg" height="20px" width="auto" viewBox="-6 -5 6 10">
+            <path d="M 0 0 L -4 -5 L -6 -5 L -2 0 L -6 5 L -4 5 L 0 0" fill="white"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="iteminfo">
+        <span>jfkwfw</span>
+        <span>jfkwfw</span>
+        <span>jfkwfw</span>
+        <span>jfkwfw</span>
+        <span>jfkwfw</span>
+
+      </div>
+    </div>
+
+
+  </section>
+  <section class="metadata" id="metadata">
+    <div class="sectitle">
+      <span>
+        <svg class="sectitle_fig" xmlns="http://www.w3.org/2000/svg" viewBox="-0.1 -3.1 12.2 8.2">
+          <path d="M 0 0 L 10 -3 L 12 2 L 2 5 L 0 0" stroke="#cb4c48" stroke-width="0.1" fill="#6d2d2e"/>
+        </svg>
+        <svg width="1rem" height="1rem" viewBox="-0.2 -2.1 4.4 4.2" style="margin: 0 1rem 0 4rem; display: inline-block; vertical-align: middle;">
+              <path d="M 0 0 M 2 1 L 1 0 L 2 -1 L 3 0 L 2 1 M 2 2 L 4 0 L 2 -2 L 0 0 L 2 2" fill="white"/></svg><h3>METADATA ANALYSIS</h3></span>
+    </div>
+    <div class="mdTableContainer">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Item</th>
+            <th scope="col">Type</th>
+            <th scope="col">Provider</th>
+            <th scope="col">Metadata standard used <br>by the provider</th>
+            <th scope="col">Metadata standard chosen <br>for the alignment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>"Ritrovamento del cadavere di Jacopo de' Pazzi"</td>
+            <td>Painting</td>
+            <td>Catalogo Generale dei Beni Culturali</td>
+            <td>Arco</td>
+            <td>Arco</td>
+          </tr>
+          <tr>
+            <td>"Assassin’s Creed II: The Original Game Soundtrack"</td>
+            <td>Soundtrack</td>
+            <td>Musicbrainz.org</td>
+            <td>MMD/XML-2.0</td>
+            <td>MMD/XML-2.0</td>
+          </tr>
+          <tr>
+            <td>Mechanical wing drawing</td>
+            <td>Drawing</td>
+            <td>Biblioteca Ambrosiana</td>
+            <td>/</td>
+            <td>Dublin Core</td>
+          </tr>
+          <tr>
+            <td>Assassin's Creed: Lineage</td>
+            <td>TV Mini Series</td>
+            <td>IMDb</td>
+            <td>/</td>
+            <td>schema.org</td>
+          </tr>
+          <tr>
+            <td>GamePro n.252</td>
+            <td>Magazine</td>
+            <td>Belmont College Library</td>
+            <td>MARC</td>
+            <td>MARC21</td>
+          </tr>
+          <tr>
+            <td>Physical copy of Assassin's Creed 2</td>
+            <td>DVD</td>
+            <td>University of Calgary</td>
+            <td>MARC</td>
+            <td>MARC21</td>
+          </tr>
+          <tr>
+            <td>"Assassin's Creed: Renaissance"</td>
+            <td>Book</td>
+            <td>Library of Congress</td>
+            <td>MARC</td>
+            <td>MARC21</td>
+          </tr>
+          <tr>
+            <td>Venetian Falchion</td>
+            <td>Weapon</td>
+            <td>The Metropolitan Museum of Art</td>
+            <td>MET'S API</td>
+            <td>CIDOC-CRM</td>
+          </tr>
+          <tr>
+            <td>Perseus with the head of Medusa</td>
+            <td>Statue</td>
+            <td>/</td>
+            <td>/</td>
+            <td>CIDOC-CRM</td>
+          </tr>
+          <tr>
+            <td>Palazzo Vecchio</td>
+            <td>Building</td>
+            <td>Catalogo Generale dei Beni Culturali</td>
+            <td>Arco</td>
+            <td>km4city</td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+
+  </section>
+  <section class="conceptual_model" id="conceptual_model">
+    <div class="sectitle">
+      <span>
+        <svg class="sectitle_fig" xmlns="http://www.w3.org/2000/svg" viewBox="-0.1 -3.1 12.2 8.2">
+          <path d="M 0 0 L 10 -3 L 12 2 L 2 5 L 0 0" stroke="#cb4c48" stroke-width="0.1" fill="#6d2d2e"/>
+        </svg>
+        <svg width="1rem" height="1rem" viewBox="-0.2 -2.1 4.4 4.2" style="margin: 0 1rem 0 4rem; display: inline-block; vertical-align: middle;">
+              <path d="M 0 0 M 2 1 L 1 0 L 2 -1 L 3 0 L 2 1 M 2 2 L 4 0 L 2 -2 L 0 0 L 2 2" fill="white"/></svg><h3>CONCEPTUAL MODEL</h3></span>
+    </div>
+  </section>
+
+</body>
+
+</html>
