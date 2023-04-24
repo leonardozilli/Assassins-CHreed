@@ -140,9 +140,7 @@ function carousel() {
     }
 
     const moveLeft = document.getElementsByClassName('left');
-    console.log(moveLeft)
     const moveRight = document.getElementsByClassName(".next");
-    console.log(moveRight)
 
     for (let i = 0; i < button.length; i++) {
         button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());

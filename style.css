@@ -23,7 +23,7 @@ html,body {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: url('/images/background.jpg') no-repeat center center fixed;
+    background: url('images/background.jpg') no-repeat center center fixed;
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
