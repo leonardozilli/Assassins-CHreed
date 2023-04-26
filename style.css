@@ -23,16 +23,48 @@ html,body {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: url('images/background.jpg') no-repeat center center fixed;
+    font-size: 30px;
+
+}
+
+.bg-container {
+    display:block;
+    padding:0;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:-1;
+}
+
+
+.bg-image { 
+    position: absolute;
+    background: url('images/background.jpg') center center;
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-size: 30px;
+    top: -10%;
+    bottom: 10%;
+    left: -10%;
+    right: 10%;
+    width:120%;
+    height:120%;
 }
 
-section {
+.bg-image.blurred { /*--bad performances--*/
+    opacity: 1;
+    -webkit-filter: blur(4px);
+    -ms-filter: blur(4px);
+    -o-filter: blur(4px);
+    filter: blur(4px);
+
+}
+
+section:not(.main_menu) {
     display: block;
 }
 
@@ -303,7 +335,7 @@ tbody tr:nth-child(even) {
 
 th,
 td {
-  padding: 20px;
+  padding: 15px;
 }
 
 thead {

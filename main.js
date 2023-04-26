@@ -176,6 +176,13 @@ function carousel() {
 
 
 $(document).ready(function () {
+    $(window).scroll(function(e) {
+    var s = $(window).scrollTop(),
+        opacityVal = (s / 1000);
+
+    $('.blurred').css('opacity', opacityVal);
+    });
+
     var $menuItems = $(".menu_item");
     var time = 300;
     $menuItems.each(function (idx, li) {
@@ -187,5 +194,3 @@ $(document).ready(function () {
 
     carousel();
 });
-
-//gradient transition
