@@ -97,10 +97,59 @@ function accordion(element) {
     }
 }
 
+function zoom() {
+        var scale = 1,
+        panning = false,
+        pointX = 0,
+        pointY = 0,
+        start = { x: 0, y: 0 },
+        zoom = document.getElementById("zoom");
+        zoomcontainer = document.getElementById("zoomcontainer");
+
+      function setTransform() {
+        zoom.style.transform = "translate(" + pointX + "px, " + pointY + "px) scale(" + scale + ")";
+      }
+
+      zoomcontainer.onmousedown = function (e) {
+        e.preventDefault();
+        start = { x: e.clientX - pointX, y: e.clientY - pointY };
+        panning = true;
+      }
+
+      zoomcontainer.onmouseup = function (e) {
+        panning = false;
+      }
+
+      zoomcontainer.onmousemove = function (e) {
+        e.preventDefault();
+        if (!panning) {
+          return;
+        }
+        pointX = (e.clientX - start.x);
+        pointY = (e.clientY - start.y);
+        setTransform();
+      }
+
+      zoomcontainer.onwheel = function (e) {
+        e.preventDefault();
+        var xs = (e.clientX - pointX) / scale,
+          ys = (e.clientY - pointY) / scale,
+          delta = (e.wheelDelta ? e.wheelDelta : -e.deltaY);
+        (delta > 0) ? (scale *= 1.2) : (scale /= 1.2);
+        pointX = e.clientX - xs * scale;
+        pointY = e.clientY - ys * scale;
+
+        setTransform();
+      }
+
+}
+
 function carousel() {
+
     const slider = document.querySelector(".carousel_items");
     const slides = document.querySelectorAll(".carousel_item");
     const button = document.querySelectorAll(".button");
+    const infobox = document.querySelectorAll(".infobox");
 
     let current = 0;
     let prev = current > 0 ? current - 1 : slides.length - 1;
@@ -114,6 +163,11 @@ function carousel() {
     let next4 = next + 4;
 
     const update = () => {
+        infobox.forEach(it => {
+            it.classList.remove("active")
+        });
+        infobox[current].classList.add("active");
+
         slides.forEach(it => {
             it.classList.remove("active");
             it.classList.remove("prev", "one");
@@ -173,6 +227,27 @@ function carousel() {
 }
 
 
+function selectTab(){
+    griditems = document.getElementsByClassName('gridtab')
+    cmtab = document.getElementById('conceptualmaptab')
+    ertab = document.getElementById('ermodeltab')
+    cmtab.addEventListener("click", function (e) {
+        document.getElementById('conceptualmap').classList.remove('hidden')
+        document.getElementById('ermodel').classList.add('hidden')
+    });
+    ertab.addEventListener("click", function (e) {
+        document.getElementById('ermodel').classList.remove('hidden')
+        document.getElementById('conceptualmap').classList.add('hidden')
+    });
+    for (let i = 0; i < griditems.length; i++) {
+        griditems[i].addEventListener("click", function (e) { 
+            Array.from(griditems).forEach(griditem => griditem.classList.remove('active'));
+            griditems[i].classList.add('active')
+        });
+    }
+}
+
+
 
 
 $(document).ready(function () {
@@ -193,4 +268,8 @@ $(document).ready(function () {
     });
 
     carousel();
+    zoom();
+    selectTab();
+
+
 });
