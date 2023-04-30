@@ -19,6 +19,18 @@ function hover(element) {
     }
 }
 
+function metaHover(element) {
+    m = document.getElementsByClassName('metadata_item');
+    if (element.classList.contains('hovered')) {
+        //pass
+    } else {
+        for (el of m) {
+            el.classList.remove('hovered');
+        }
+        element.classList.add('hovered');
+    }
+}
+
 function subHover(element) {
     c = document.getElementsByClassName('submenu_label');
     d = document.getElementsByClassName('menu_label');
@@ -108,6 +120,7 @@ function zoom() {
 
       function setTransform() {
         zoom.style.transform = "translate(" + pointX + "px, " + pointY + "px) scale(" + scale + ")";
+        console.log(scale)
       }
 
       zoomcontainer.onmousedown = function (e) {
@@ -231,6 +244,50 @@ function selectTab(){
     griditems = document.getElementsByClassName('gridtab')
     cmtab = document.getElementById('conceptualmaptab')
     ertab = document.getElementById('ermodeltab')
+    erbut = document.getElementById('ermodelbutton')
+    cmbut = document.getElementById('conceptualmapbutton')
+    whoTab = document.getElementById('whoTab')
+    whenTab = document.getElementById('whenTab')
+    whereTab = document.getElementById('whereTab')
+    whatTab = document.getElementById('whatTab')
+    m = document.getElementsByClassName('metadata_item');
+    metadataTabs = document.getElementsByClassName('metadataTable')
+    whoTab.addEventListener("click", function (e) {
+        Array.from(metadataTabs).forEach(metadataTab => metadataTab.classList.add('hidden'));
+        Array.from(m).forEach(el => el.classList.remove('selected'));
+        whoTab.classList.add('selected')
+        document.getElementById('whoTable').classList.remove('hidden');
+    });
+    whenTab.addEventListener("click", function (e) {
+        Array.from(metadataTabs).forEach(metadataTab => metadataTab.classList.add('hidden'));
+        Array.from(m).forEach(el => el.classList.remove('selected'));
+        whenTab.classList.add('selected')
+        document.getElementById('whenTable').classList.remove('hidden');
+    });
+    whereTab.addEventListener("click", function (e) {
+        Array.from(metadataTabs).forEach(metadataTab => metadataTab.classList.add('hidden'));
+        Array.from(m).forEach(el => el.classList.remove('selected'));
+        whereTab.classList.add('selected')
+        document.getElementById('whereTable').classList.remove('hidden');
+    });
+    whatTab.addEventListener("click", function (e) {
+        Array.from(metadataTabs).forEach(metadataTab => metadataTab.classList.add('hidden'));
+        Array.from(m).forEach(el => el.classList.remove('selected'));
+        whatTab.classList.add('selected')
+        document.getElementById('whatTable').classList.remove('hidden');
+    });
+    erbut.addEventListener("click", function (e) {
+        document.getElementById('ermodel').classList.remove('hidden');
+        document.getElementById('conceptualmap').classList.add('hidden');
+        Array.from(griditems).forEach(griditem => griditem.classList.remove('active'));
+        ertab.classList.add('active')
+    });
+    cmbut.addEventListener("click", function (e) {
+        document.getElementById('conceptualmap').classList.remove('hidden')
+        document.getElementById('ermodel').classList.add('hidden')
+        Array.from(griditems).forEach(griditem => griditem.classList.remove('active'));
+        cmtab.classList.add('active')
+    });
     cmtab.addEventListener("click", function (e) {
         document.getElementById('conceptualmap').classList.remove('hidden')
         document.getElementById('ermodel').classList.add('hidden')
