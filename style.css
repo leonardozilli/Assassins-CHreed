@@ -365,24 +365,27 @@ table {
 
 .metadataTable {
     position: absolute;
-    height: 50vh;
-    width: 60vw;
+    max-height: 50vh;
+    width: 70vw;
     box-shadow: 1px 10px 20px 20px #9c9c9c59;
-    margin: 5vh 30vw;
+    margin: 5vh 20vw;
     max-width: 80vw;
-    table-layout: fixed;
+    table-layout: auto;
     border-collapse: collapse;
     color: white;
     transition: opacity 0.3s ease-out;
 }
 
-.metadataTable.hidden {
-    opacity: 0;
+.metadataTable > tbody > tr > td:nth-child(7){
+  white-space: pre-wrap;
 }
 
-.mdaTableContainer > table > tbody >  tr > td:nth-child(2),
-.mdaTableContainer > table > tbody >  tr > td:nth-child(4),
-.mdaTableContainer > table > tbody >  tr > td:nth-child(5) {
+.metadataTable.hidden {
+    opacity: 0;
+    z-index: -11;
+}
+
+.metadataTable td{
   text-align: center;
 }
 
@@ -395,9 +398,10 @@ tbody tr:nth-child(even) {
   background-color: rgba(65, 66, 59, 0.7);
 }
 
-th,
-td {
+.metadataTable th,
+.metadataTable td {
   padding: 15px;
+  white-space: nowrap;
 }
 
 thead {
@@ -419,7 +423,7 @@ table {
 .metadataTableTab {
   position: absolute;
   text-transform: uppercase;
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 
 .metadata_item {
@@ -434,7 +438,7 @@ table {
     cursor: pointer;
     background-image: linear-gradient(#dad8d3af, #ecebe7af);
     margin-bottom: 1em;
-    left: 13vw;
+    left: 6vw;
     padding-left: 1.2em;
     position: relative;
 }
@@ -466,6 +470,9 @@ table {
   stroke: #c3c1bd;
 }
 
+.metadataalignment{
+  height: 80vh;
+}
 
 /*-- carousel --*/
 
@@ -627,11 +634,11 @@ table {
   opacity: 0.75;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 80px;
-  height: 50px;
+  width: 2em;
+  height: 1.2em;
   background: #4e4946;
   z-index: -1;
-  clip-path: polygon(20px 0%, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0% calc(0% + 20px));
+  clip-path: polygon(13px 0%, 100% 0, 100% calc(100% - 13px), calc(100% - 13px) 100%, 0 100%, 0% calc(0% + 13px));
 }
 
 
@@ -639,9 +646,9 @@ table {
   content: '';
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0.449);
   z-index: -1;
-  clip-path: polygon(22px calc(0% + 4px), calc(100% - 4px) calc(0% + 4px), calc(100% - 4px) calc(100% - 22px), calc(100% - 22px) calc(100% - 4px), calc(0% + 4px) calc(100% - 4px), calc(0% + 4px) calc(0% + 22px));
+  clip-path: polygon(14px calc(0% + 2px), calc(100% - 2px) calc(0% + 2px), calc(100% - 2px) calc(100% - 14px), calc(100% - 14px) calc(100% - 2px), calc(0% + 2px) calc(100% - 2px), calc(0% + 2px) calc(0% + 14px));
   opacity: 1;
 }
 
@@ -651,7 +658,6 @@ table {
 
 .button > svg {
   z-index: 4;
-  margin-top: 15px;
 }
 
 .iteminfo {
@@ -687,11 +693,12 @@ table {
   color: white;
   text-transform: uppercase;
   font-weight: 300;
+  font-size: 1.2rem;
+  max-width: fit-content;
 }
 
 .iteminfo > .active span {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   animation: 
     typing 1s steps(40, end),
@@ -705,20 +712,35 @@ table {
 }
 
 
-.conceptualmapercontainer {
+.mapcontainer {
   display: grid;
-  width: 90vw;
+  width: 80vw;
   height: 80vh;
   margin: 10vh auto;
   grid-template-rows: 1fr 6fr;
   row-gap: 10px;
-
 }
+
+.rdf_visualization > .mapcontainer {
+  grid-template-rows: 1fr;
+}
+
+
 
 .gridtabs {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 10px;
+}
+
+.conceptualmodel_container > .gridtabs {
+  grid-template-columns: 1fr;
+}
+
+.gridtab1 > span,
+.gridtab3 > span,
+.gridtab2 > span {
+  font-weight: 200;
 }
 
 .gridtabs > div{
@@ -743,7 +765,7 @@ table {
   overflow: hidden;
 }
 
-#zoom {
+#zoom, #zoom2, #zoom3, #zoom4{
   width: 100%;
   height: 100%;
   transform-origin: 0px 0px;

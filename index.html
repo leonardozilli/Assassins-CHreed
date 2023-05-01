@@ -19,7 +19,7 @@
   </div>
   <section class="main_menu" id="main_menu">
     <div class="title">
-      <h1>KOCH untitled project</h1>
+      <h1>Assassin's CHreed</h1>
     </div>
     <img src="images/bg_frame_1.png" class="bg_frame" id="frame1" alt="">
     <img src="images/bg_frame_2.png" class="bg_frame" id="frame2" alt="">
@@ -47,8 +47,9 @@
                 <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label subSelected" id="conceptualmapbutton" onmouseover=subHover(this) onclick="scrollSmoothTo('conceptual_map_er_model')">Conceptual Map</a></li>
                 <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label" id="ermodelbutton" onmouseover=subHover(this) onclick="scrollSmoothTo('conceptual_map_er_model')">E/R Model</a></li>
               <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label" onmouseover=subHover(this) onclick="scrollSmoothTo('metadataanalysis')">Metadata Analysis</a></li>
-              <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label" onmouseover=subHover(this)>Theoretical Model</a></li>
-              <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label" onmouseover=subHover(this)>Conceptual Model</a></li>
+              <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label" id="theoreticalmodelbutton" onmouseover=subHover(this) onclick="scrollSmoothTo('theoretical_enhanced')">Theoretical Model</a></li>
+              <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label" id="enhancederbutton" onmouseover=subHover(this) onclick="scrollSmoothTo('theoretical_enhanced')">Enhanced E/R Model</a></li>
+              <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label" onmouseover=subHover(this) onclick="scrollSmoothTo('conceptual_model')">Conceptual Model</a></li>
             </ul>
           </div>
         </li>
@@ -60,8 +61,8 @@
           </div>
           <div>
             <ul class="menu_subitems " id="menu_subitem0" style="display: none;">
-              <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label subSelected" onmouseover=subHover(this)>RDF Production</a></li>
-              <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label" onmouseover=subHover(this)>RDF Visualization</a></li>
+              <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label subSelected" onmouseover=subHover(this) onclick="scrollSmoothTo('rdf_production')">RDF Production</a></li>
+              <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label" onmouseover=subHover(this) onclick="scrollSmoothTo('rdf_visualization')">RDF Visualization</a></li>
             </ul>
           </div>
         </li>
@@ -124,10 +125,10 @@
             <img src="images/items/physical_copy.jpg">
           </div>
           <div class="button-container">
-            <div class="button"><svg xmlns="http://www.w3.org/2000/svg" height="20px" width="auto" viewBox="0 -5 6 10">
+            <div class="button"><svg xmlns="http://www.w3.org/2000/svg" height="16px" width="auto" viewBox="0 -5 6 10">
               <path d="M 0 0 L 4 -5 L 6 -5 L 2 0 L 6 5 L 4 5 L 0 0" fill="white"/></svg>
             </div>
-            <div class="button"><svg xmlns="http://www.w3.org/2000/svg" height="20px" width="auto" viewBox="-6 -5 6 10">
+            <div class="button"><svg xmlns="http://www.w3.org/2000/svg" height="16px" width="auto" viewBox="-6 -5 6 10">
               <path d="M 0 0 L -4 -5 L -6 -5 L -2 0 L -6 5 L -4 5 L 0 0" fill="white"/></svg>
             </div>
           </div>
@@ -176,12 +177,12 @@
         <svg width="1rem" height="1rem" viewBox="-0.2 -2.1 4.4 4.2" style="margin: 0 1rem 0 4rem; display: inline-block; vertical-align: middle;">
               <path d="M 0 0 M 2 1 L 1 0 L 2 -1 L 3 0 L 2 1 M 2 2 L 4 0 L 2 -2 L 0 0 L 2 2" fill="white"/></svg><h3>CONCEPTUAL MAP & E/R MODEL</h3></span>
     </div>
-    <div class="conceptualmapercontainer">
+    <div class="mapcontainer conceptualmapercontainer">
       <div class="gridtabs">
-        <div class="gridtab active" id="conceptualmaptab">
+        <div class="gridtab1 active" id="conceptualmaptab">
           <span>CONCEPTUAL MAP</span>
         </div>
-        <div class="gridtab" id="ermodeltab">
+        <div class="gridtab1" id="ermodeltab">
           <span>E/R MODEL</span>
         </div>
       </div>
@@ -283,7 +284,7 @@
             <td>Building</td>
             <td>Catalogo Generale dei Beni Culturali</td>
             <td>ArCo</td>
-            <td>km4city</td>
+            <td>ArCo</td>
           </tr>
         </tbody>
 
@@ -319,7 +320,7 @@
       <table class="metadataTable" id="whoTable">
         <thead>
           <tr>
-            <th>who</th>
+            <th></th>
             <th scope="col">DublinCore</th>
             <th scope="col">ArCo</th>
             <th scope="col">CIDOC-CRM</th>
@@ -341,7 +342,7 @@
             <td>/</td>
           </tr>
           <tr>
-            <td>Publisher</td>
+            <th>Publisher</th>
             <td>dc:publisher</td>
             <td>/</td>
             <td>/</td>
@@ -356,8 +357,8 @@
       <table class="metadataTable hidden" id="whenTable">
         <thead>
           <tr>
-            <th>when</th>
-            <th scope="col">DublinCore2</th>
+            <th></th>
+            <th scope="col">DublinCore</th>
             <th scope="col">ArCo</th>
             <th scope="col">CIDOC-CRM</th>
             <th scope="col">MMD/XML-2.0</th>
@@ -383,8 +384,8 @@
       <table class="metadataTable hidden" id="whereTable">
         <thead>
           <tr>
-            <th>where</th>
-            <th scope="col">DublinCore3</th>
+            <th></th>
+            <th scope="col">DublinCore</th>
             <th scope="col">ArCo</th>
             <th scope="col">CIDOC-CRM</th>
             <th scope="col">MMD/XML-2.0</th>
@@ -420,8 +421,8 @@
       <table class="metadataTable hidden" id="whatTable">
         <thead>
           <tr>
-            <th>what</th>
-            <th scope="col">DublinCore4</th>
+            <th></th>
+            <th scope="col">DublinCore</th>
             <th scope="col">ArCo</th>
             <th scope="col">CIDOC-CRM</th>
             <th scope="col">MMD/XML-2.0</th>
@@ -492,12 +493,84 @@
             <td>/</td>
           </tr>
         </tbody>
-
       </table>
     </div>
-
+  </section>
+  <section class="theoretical_enhanced" id="theoretical_enhanced">
+    <div class="sectitle">
+      <span>
+        <svg class="sectitle_fig" xmlns="http://www.w3.org/2000/svg" viewBox="-0.1 -3.1 12.2 8.2">
+          <path d="M 0 0 L 10 -3 L 12 2 L 2 5 L 0 0" stroke="#cb4c48" stroke-width="0.1" fill="#6d2d2e"/>
+        </svg>
+        <svg width="1rem" height="1rem" viewBox="-0.2 -2.1 4.4 4.2" style="margin: 0 1rem 0 4rem; display: inline-block; vertical-align: middle;">
+              <path d="M 0 0 M 2 1 L 1 0 L 2 -1 L 3 0 L 2 1 M 2 2 L 4 0 L 2 -2 L 0 0 L 2 2" fill="white"/></svg><h3>THEORETICAL & ENHANCED E/R MODEL</h3></span>
+    </div>
+    <div class="mapcontainer theoretical_enhanced_container">
+      <div class="gridtabs">
+        <div class="gridtab2 active" id="theoreticalmodeltab">
+          <span>THEORETICAL MODEL</span>
+        </div>
+        <div class="gridtab2" id="enhancedermodeltab">
+          <span>ENHANCED E/R MODEL</span>
+        </div>
+      </div>
+      <div class="gridcontent" id="zoomcontainer2">
+        <div class="imagecontainer" id="zoom2" >
+          <img id="theoreticalmodel" src="images/conceptualmap.svg" alt="">
+          <img id="enhancedermodel" class="hidden" src="images/ermodel.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="conceptual_model" id="conceptual_model">
+    <div class="sectitle">
+      <span>
+        <svg class="sectitle_fig" xmlns="http://www.w3.org/2000/svg" viewBox="-0.1 -3.1 12.2 8.2">
+          <path d="M 0 0 L 10 -3 L 12 2 L 2 5 L 0 0" stroke="#cb4c48" stroke-width="0.1" fill="#6d2d2e"/>
+        </svg>
+        <svg width="1rem" height="1rem" viewBox="-0.2 -2.1 4.4 4.2" style="margin: 0 1rem 0 4rem; display: inline-block; vertical-align: middle;">
+              <path d="M 0 0 M 2 1 L 1 0 L 2 -1 L 3 0 L 2 1 M 2 2 L 4 0 L 2 -2 L 0 0 L 2 2" fill="white"/></svg><h3>CONCEPTUAL MODEL</h3></span>
+    </div>
+    <div class="mapcontainer conceptualmodel_container">
+      <div class="gridtabs">
+        <div class="gridtab3 active" id="conceptualmodeltab">
+          <span>CONCEPTUAL MODEL</span>
+        </div>
+      </div>
+      <div class="gridcontent" id="zoomcontainer3">
+        <div class="imagecontainer" id="zoom3" >
+          <img id="theoreticalmodel" src="images/conceptualmap.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="rdf_production" id="rdf_production">
+    <div class="sectitle">
+      <span>
+        <svg class="sectitle_fig" xmlns="http://www.w3.org/2000/svg" viewBox="-0.1 -3.1 12.2 8.2">
+          <path d="M 0 0 L 10 -3 L 12 2 L 2 5 L 0 0" stroke="#cb4c48" stroke-width="0.1" fill="#6d2d2e"/>
+        </svg>
+        <svg width="1rem" height="1rem" viewBox="-0.2 -2.1 4.4 4.2" style="margin: 0 1rem 0 4rem; display: inline-block; vertical-align: middle;">
+              <path d="M 0 0 M 2 1 L 1 0 L 2 -1 L 3 0 L 2 1 M 2 2 L 4 0 L 2 -2 L 0 0 L 2 2" fill="white"/></svg><h3>RDF PRODUCTION</h3></span>
+    </div>
   </section>
 
+  <section class="rdf_visualization" id="rdf_visualization">
+    <div class="sectitle">
+      <span>
+        <svg class="sectitle_fig" xmlns="http://www.w3.org/2000/svg" viewBox="-0.1 -3.1 12.2 8.2">
+          <path d="M 0 0 L 10 -3 L 12 2 L 2 5 L 0 0" stroke="#cb4c48" stroke-width="0.1" fill="#6d2d2e"/>
+        </svg>
+        <svg width="1rem" height="1rem" viewBox="-0.2 -2.1 4.4 4.2" style="margin: 0 1rem 0 4rem; display: inline-block; vertical-align: middle;">
+              <path d="M 0 0 M 2 1 L 1 0 L 2 -1 L 3 0 L 2 1 M 2 2 L 4 0 L 2 -2 L 0 0 L 2 2" fill="white"/></svg><h3>RDF VISUALIZATION</h3></span>
+    </div>
+      <div class="mapcontainer ">
+        <div class="gridcontent" id="zoomcontainer4">
+          <div class="imagecontainer" id="zoom4" >
+            <img id="theoreticalmodel" src="images/conceptualmap.svg" alt="">
+          </div>
+        </div>
+      </div>
+  </section>
 </body>
-
 </html>
