@@ -266,6 +266,9 @@ svg.reversed path{
   d: path("M0,50 l35,-50 l35,50");
 }
 
+.menu_label {
+}
+
 .selected {
   position: relative;
   font-size: 120%;
@@ -273,20 +276,6 @@ svg.reversed path{
   color: white !important;
   z-index: 1;
 }
-
-.selected::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  transition: opacity 0.2s linear;
-  opacity: var(--extended_bg);
-  background-image: linear-gradient(#534b48, #534b48);
-}
-
 
 .extended {
   font-size: 120%;
@@ -316,7 +305,7 @@ svg.reversed path{
 .mdTableContainer > table {
     height: 60vh;
     width: 80vw;
-    box-shadow: 1px 10px 20px 20px #9c9c9c59;
+    box-shadow: -1px 1px 20px 0px #9c9c9c59;
     margin: auto;
     margin-top: 5vh;
     max-width: 80vw;
@@ -362,11 +351,17 @@ table {
 
 /*--mdaTableContainer --*/
 
+.mdaTableContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 30vh;
+}
+
 .metadataTable {
     position: absolute;
     max-height: 50vh;
-    box-shadow: 1px 10px 20px 20px #9c9c9c59;
-    margin: 9vh 20vw;
+    box-shadow: -1px 1px 20px 0px #9c9c9c59;
+    margin: 18vh 20vw;
     max-width: 70vw;
     table-layout: auto;
     border-collapse: collapse;
@@ -388,7 +383,7 @@ table {
 }
 
 tbody tr:nth-child(odd) {
-  background-color: rgba(215, 216, 212, 0.7);
+  background-color: rgba(215, 215, 215, 0.7);
   color: black;
 }
 
@@ -666,7 +661,6 @@ table {
   margin-top: 7vh;
   background-color: #4e4946d8;
   clip-path: polygon(var(--corner-offset) 0%, 100% 0, 100% calc(100% - var(--corner-offset)), calc(100% - var(--corner-offset)) 100%, 0 100%, 0% calc(0% + var(--corner-offset)));
-  padding: 5rem;
 }
 
 .iteminfo::before {
@@ -677,10 +671,17 @@ table {
   background-color: #827f7a;
 }
 
-.iteminfo div {
+.infobox {
+  position: absolute;
   opacity: 0;
   transition: opacity 0.1s ease-out;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  text-align: center;
 }
+
 
 .iteminfo > .active{
   opacity: 1;
@@ -691,22 +692,31 @@ table {
   color: white;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 1.2rem;
-  max-width: fit-content;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  text-align: center;
 }
 
-.iteminfo > .active span {
+.infobox > p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 8em;
+}
+
+.jiteminfo > .active span {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   animation: 
     typing 1s steps(40, end),
     blink-caret .75s step-end infinite;
 }
-
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
+}
+
+
+.infobox.active {
 }
 
 
@@ -748,18 +758,21 @@ table {
   opacity: 0.5;
   border-radius: 1px;
   cursor: pointer;
-  box-shadow: 1px 10px 20px 20px #9c9c9c59;
+  box-shadow: -1px 1px 20px 0px #9c9c9c59;
   transition: all 0.5s ease-out;
 }
 
-.gridtabs > div.active, .gridcontent {
-  background-color: #45453f;
+.gridcontent {
+  background-color: #f4f4f4;
   opacity: 0.8;
-  color: white;
+}
+.gridtabs > div.active {
+  background-color: #f4f4f4;
+  opacity: 0.6;
 }
 
 .gridcontent {
-  box-shadow: 1px 10px 20px 20px #9c9c9c59;
+  box-shadow: -1px 1px 20px 0px #9c9c9c59;
   overflow: hidden;
 }
 
@@ -787,6 +800,12 @@ table {
 
 .imagecontainer > img.hidden {
   opacity: 0;
+}
+
+#zoomcontainer4 {
+  height: 60vh;
+  border: 3px solid grey;
+  border-radius: 2px;
 }
 
 footer  {
