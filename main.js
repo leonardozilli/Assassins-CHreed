@@ -72,6 +72,9 @@ function accordion(element) {
                 $('#frame2').animate({
                     top: "+=272px",
                 });
+                $('#domain').animate({
+                    marginTop: "+=272px",
+                });
                 break;
             case 'menu_subitem2':
                 $('#frame2').animate({
@@ -94,6 +97,9 @@ function accordion(element) {
             case 'menu_subitem1':
                 $('#frame2').animate({
                     top: "-=272px",
+                });
+                $('#domain').animate({
+                    marginTop: "-=272px",
                 });
                 break;
             case 'menu_subitem2':

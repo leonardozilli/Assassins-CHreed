@@ -306,6 +306,10 @@ svg.reversed path{
   stroke: white;
 }
 
+.metadata {
+  height: 100vh;
+}
+
 
 /*-- mdTable --*/
 .mdTableContainer {
@@ -340,7 +344,7 @@ tbody tr:nth-child(even) {
 
 th,
 td {
-  padding: 15px;
+  padding: 15px 10px;
 }
 
 thead {
@@ -360,16 +364,12 @@ table {
 
 /*--mdaTableContainer --*/
 
-.mdaTableContainer {
-}
-
 .metadataTable {
     position: absolute;
     max-height: 50vh;
-    width: 70vw;
     box-shadow: 1px 10px 20px 20px #9c9c9c59;
-    margin: 5vh 20vw;
-    max-width: 80vw;
+    margin: 9vh 20vw;
+    max-width: 70vw;
     table-layout: auto;
     border-collapse: collapse;
     color: white;
@@ -400,7 +400,7 @@ tbody tr:nth-child(even) {
 
 .metadataTable th,
 .metadataTable td {
-  padding: 15px;
+  padding: 10px;
   white-space: nowrap;
 }
 
@@ -423,7 +423,7 @@ table {
 .metadataTableTab {
   position: absolute;
   text-transform: uppercase;
-  margin-top: 15vh;
+  margin-top: 20vh;
 }
 
 .metadata_item {
@@ -438,7 +438,7 @@ table {
     cursor: pointer;
     background-image: linear-gradient(#dad8d3af, #ecebe7af);
     margin-bottom: 1em;
-    left: 6vw;
+    left: 5vw;
     padding-left: 1.2em;
     position: relative;
 }
@@ -471,7 +471,7 @@ table {
 }
 
 .metadataalignment{
-  height: 80vh;
+  height: 90vh;
 }
 
 /*-- carousel --*/
@@ -791,5 +791,8 @@ table {
   opacity: 0;
 }
 
+footer  {
+  height: 15vh;
+}
 
 
