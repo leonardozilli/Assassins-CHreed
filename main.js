@@ -70,10 +70,10 @@ function accordion(element) {
                 break;
             case 'menu_subitem1':
                 $('#frame2').animate({
-                    top: "+=272px",
+                    top: "+=300px",
                 });
                 $('#domain').animate({
-                    marginTop: "+=272px",
+                    marginTop: "+=300px",
                 });
                 break;
             case 'menu_subitem2':
@@ -96,10 +96,10 @@ function accordion(element) {
                 break;
             case 'menu_subitem1':
                 $('#frame2').animate({
-                    top: "-=272px",
+                    top: "-=300px",
                 });
                 $('#domain').animate({
-                    marginTop: "-=272px",
+                    marginTop: "-=300px",
                 });
                 break;
             case 'menu_subitem2':
