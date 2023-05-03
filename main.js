@@ -65,50 +65,60 @@ function accordion(element) {
         switch (i) {
             case 'menu_subitem0':
                 $('#frame2').animate({
-                    top: "+=109px",
+                    top: "+=16vh",
+                });
+                $('#domain').animate({
+                    marginTop: "+=16vh",
                 });
                 break;
             case 'menu_subitem1':
                 $('#frame2').animate({
-                    top: "+=300px",
+                    top: "+=40vh",
                 });
                 $('#domain').animate({
-                    marginTop: "+=300px",
+                    marginTop: "+=40vh",
                 });
                 break;
             case 'menu_subitem2':
                 $('#frame2').animate({
-                    top: "+=109px",
+                    top: "+=13vh",
+                });
+                $('#domain').animate({
+                    marginTop: "+=13vh",
                 });
                 break;
         };
         element.classList.remove('selected');
         element.classList.add('extended');
-        document.documentElement.style.setProperty('--extended_bg', "1");
         document.getElementById(i).firstElementChild.querySelector("a").classList.add('subSelected');
         element.getElementsByTagName('svg')[0].classList.add('reversed');
     } else {
         switch (i) {
             case 'menu_subitem0':
                 $('#frame2').animate({
-                    top: "-=109px",
+                    top: "-=16vh",
+                });
+                $('#domain').animate({
+                    marginTop: "-=16vh",
                 });
                 break;
             case 'menu_subitem1':
                 $('#frame2').animate({
-                    top: "-=300px",
+                    top: "-=40vh",
                 });
                 $('#domain').animate({
-                    marginTop: "-=300px",
+                    marginTop: "-=40vh",
                 });
                 break;
             case 'menu_subitem2':
                 $('#frame2').animate({
-                    top: "-=109px",
+                    top: "-=13vh",
+                });
+                $('#domain').animate({
+                    marginTop: "-=13vh",
                 });
                 break;
         };
-        document.documentElement.style.setProperty('--extended_bg', "0")
         element.classList.remove('extended');
         element.classList.add('selected');
         element.getElementsByTagName('svg')[0].classList.remove('reversed')
@@ -148,17 +158,16 @@ function zoom() {
         setTransform();
       }
 
-      zoomcontainer.onwheel = function (e) {
+        zoomcontainer.onwheel = function (e) {
         e.preventDefault();
         var xs = (e.clientX - pointX) / scale,
           ys = (e.clientY - pointY) / scale,
           delta = (e.wheelDelta ? e.wheelDelta : -e.deltaY);
-        (delta > 0) ? (scale *= 1.2) : (scale /= 1.2);
+        (delta > 0) ? (scale < 5 ? scale *= 1.2 : scale) : (scale > 0.6 ? scale /= 1.2 : scale);
         pointX = e.clientX - xs * scale;
         pointY = e.clientY - ys * scale;
 
         setTransform();
-        console.log(pointX, pointY)
       }
 
 }
@@ -201,7 +210,7 @@ function zoom2() {
         var xs = (e.clientX - pointX) / scale,
           ys = (e.clientY - pointY) / scale,
           delta = (e.wheelDelta ? e.wheelDelta : -e.deltaY);
-        (delta > 0) ? (scale *= 1.2) : (scale /= 1.2);
+        (delta > 0) ? (scale < 5 ? scale *= 1.2 : scale) : (scale > 0.6 ? scale /= 1.2 : scale);
         pointX = e.clientX - xs * scale;
         pointY = e.clientY - ys * scale;
 
@@ -247,7 +256,7 @@ function zoom3() {
         var xs = (e.clientX - pointX) / scale,
           ys = (e.clientY - pointY) / scale,
           delta = (e.wheelDelta ? e.wheelDelta : -e.deltaY);
-        (delta > 0) ? (scale *= 1.2) : (scale /= 1.2);
+        (delta > 0) ? (scale < 5 ? scale *= 1.2 : scale) : (scale > 0.6 ? scale /= 1.2 : scale);
         pointX = e.clientX - xs * scale;
         pointY = e.clientY - ys * scale;
 
@@ -293,7 +302,7 @@ function zoom4() {
         var xs = (e.clientX - pointX) / scale,
           ys = (e.clientY - pointY) / scale,
           delta = (e.wheelDelta ? e.wheelDelta : -e.deltaY);
-        (delta > 0) ? (scale *= 1.2) : (scale /= 1.2);
+        (delta > 0) ? (scale < 5 ? scale *= 1.2 : scale) : (scale > 0.6 ? scale /= 1.2 : scale);
         pointX = e.clientX - xs * scale;
         pointY = e.clientY - ys * scale;
 
