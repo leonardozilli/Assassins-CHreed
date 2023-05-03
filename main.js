@@ -310,6 +310,30 @@ function zoom4() {
       }
 }
 
+
+function typeWriter(el) {
+    const textArray = el.innerHTML.split('');
+    el.innerHTML = '';
+    textArray.forEach((letter, i) =>
+        setTimeout(() => (el.innerHTML += letter), 25 * i)
+    );
+    setInterval(() => typeWriter(el), 8000);
+}
+
+
+function typeWriter1(el) {
+    var i = 0;
+    const txt = el.innerHTML;
+    el.innerHTML = '';
+    console.log(txt)
+    var speed = 20;
+    if (i < txt.length) {
+        el.innerHTML += txt.charAt(i);
+        i++;
+    setTimeout(typeWriter1, speed);
+  }
+}
+
 function carousel() {
 
     const slider = document.querySelector(".carousel_items");
@@ -333,6 +357,7 @@ function carousel() {
             it.classList.remove("active")
         });
         infobox[current].classList.add("active");
+        //typeWriter(infobox[current].querySelector('span'))
 
         slides.forEach(it => {
             it.classList.remove("active");
