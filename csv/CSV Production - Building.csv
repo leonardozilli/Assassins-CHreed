@@ -1,0 +1,12 @@
+Subject,Predicate,Object
+Palazzo Vecchio(WHAT),rdf:type,Building
+Palazzo Vecchio(WHAT),owl:sameAs,https://viaf.org/viaf/125014958/
+Palazzo Vecchio(WHAT),crm:P45_consists_of,solid rusticated stonework
+Palazzo Vecchio(WHAT),dcterms:title,"""Palazzo Vecchio"""
+Palazzo Vecchio(WHAT),dbo:architecturalStyle,Gothic
+Palazzo Vecchio(WHO),a-cd:hasAuthor,Arnolfo di Cambio
+Palazzo Vecchio(WHEN),dbo:startDate,1299
+Palazzo Vecchio(WHEN),dbo:yearOfConstruction,1314
+Palazzo Vecchio(WHERE),dcterms:coverage,"43°46'10""N, 11°15'22""E"
+Palazzo Vecchio(WHERE),dcterms:coverage,Florence
+Palazzo Vecchio(WHERE),a-loc:hasCulturalPropertyAddress,Piazza della Signoria

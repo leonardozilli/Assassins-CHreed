@@ -1,0 +1,12 @@
+Subject,Predicate,Object
+Perseus with the Head of Medusa(WHERE),crm:P53_has_former_or_current_location,Loggia dei Lanzi
+Perseus with the Head of Medusa(WHERE),crm:P53_has_former_or_current_location,Piazza della Signoria
+Perseus with the Head of Medusa(WHERE),crm:P168_place_is_defined_by,"43°46'09.12""N 
+11°15'20.88E"
+Perseus with the Head of Medusa(WHEN),schema:dateCreated,1545–1554
+Perseus with the Head of Medusa(WHO),dcterms:creator,Benvenuto Cellini
+Perseus with the Head of Medusa(WHAT),crm:P2_has_type,Sculpture
+Perseus with the Head of Medusa(WHAT),crm:P43_has_dimension,519 cm
+Perseus with the Head of Medusa(WHAT),crm:P45_consists_of,Bronze
+Perseus with the Head of Medusa(WHAT),crm:P129_is_about,Perseus beheading Medusa
+Perseus with the Head of Medusa(WHAT),vgo:isItemInGame,Assassin's Creed II

@@ -1,0 +1,11 @@
+Subject,Predicate,Object
+Assassin's Creed: Renaissance by Oliver Bowden(WHEN),fabio:publicationDate,23/02/2010
+Assassin's Creed: Renaissance by Oliver Bowden(WHO),dcterms:creator,Oliver Bowden
+Assassin's Creed: Renaissance by Oliver Bowden(WHO),dcterms:publisher,Penguin Books
+Assassin's Creed: Renaissance by Oliver Bowden(WHERE),fabio:hasPlaceOfPublication,London
+Assassin's Creed: Renaissance by Oliver Bowden(WHERE),fabio:hasPlaceOfPublication,New York
+Assassin's Creed: Renaissance by Oliver Bowden(WHAT),rdf:type,Book
+Assassin's Creed: Renaissance by Oliver Bowden(WHAT),dbo:genre,Adventure fiction
+Assassin's Creed: Renaissance by Oliver Bowden(WHAT),crm:P72_has_language,English
+Assassin's Creed: Renaissance by Oliver Bowden(WHAT),fabio:isbn,9780141046303
+Assassin's Creed: Renaissance by Oliver Bowden(WHAT),frbre:isATransformationOfWork,Assassin's Creed II

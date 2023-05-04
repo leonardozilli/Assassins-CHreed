@@ -1,0 +1,11 @@
+Subject,Predicate,Object
+Venetian Falchion(WHO),crm:P50_has_current_keeper,The Metropolitan Museum of Art
+Venetian Falchion(WHERE),schema:originatesFrom,"Venice, Italy"
+Venetian Falchion(WHEN),crm:P4_has_time-span,1490 ca.
+Venetian Falchion(WHAT),crm:P43_has_dimension,L. 36 in. (91.4 cm) 
+Venetian Falchion(WHAT),crm:P43_has_dimension,Wt. 2 lb. 3 oz. (981g)
+Venetian Falchion(WHAT),crm:P2_has_type,sword
+Venetian Falchion(WHAT),crm:P45_consists_of,steel
+Venetian Falchion(WHAT),crm:P45_consists_of,gold
+Venetian Falchion(WHAT),crm:P45_consists_of,textile
+Venetian Falchion(WHAT),crm:P102_has_title,Falchion
