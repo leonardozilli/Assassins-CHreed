@@ -341,8 +341,9 @@ svg.reversed path{
 }
 
 .siteTable th {
-  font-weight: 400;
   font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 .siteTable table {
@@ -351,18 +352,88 @@ svg.reversed path{
 
 /* csv tables */
 
+.csv_tables {
+  height: 110vh;
+}
+
+.csvtablestabs {
+  display: flex;
+  flex-direction: row;
+  max-width: 80vw;
+  justify-content: center;
+  margin: auto;
+  gap: 1rem;
+}
+
+.csvtablestab {
+  background-color: rgba(109, 45, 46, 1);
+  color: white;
+  text-transform: uppercase;
+  padding: 1rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 10vh;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7em;
+  height: 7vh;
+  clip-path: polygon(1rem 0%, 100% 0, 100% calc(100% - 1rem), calc(100% - 1rem) 100%, 0 100%, 0% calc(0% + 1rem));
+  z-index: 1;
+}
+
+.csvtablestab::before {
+  content: '';
+  position: relative;
+  inset: 0;
+  background: whitesmoke;
+  z-index: 3;
+  clip-path: polygon(14px calc(0% + 2px), calc(100% - 2px) calc(0% + 2px), calc(100% - 2px) calc(100% - 14px), calc(100% - 14px) calc(100% - 2px), calc(0% + 2px) calc(100% - 2px), calc(0% + 2px) calc(0% + 14px));
+}
+
+.csvtablestab.active {
+  font-weight: 500;
+}
+
 .csvtable {
-    height: 60vh;
+    left: 10vw;
+    position: absolute;
     width: 80vw;
     box-shadow: -1px 1px 20px 0px #9c9c9c59;
     margin: auto;
-    margin-top: 5vh;
+    margin-top: 3vh;
     max-width: 80vw;
     table-layout: fixed;
     border-collapse: collapse;
     color: white;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.3s linear;
+    z-index: 3;
 }
 
+.csvtable.hidden {
+  opacity: 0;
+  z-index: -3;
+}
+
+.csvtable tr th:first-child {
+  width: 8em;
+  text-align: center;
+  font-weight: 200;
+}
+
+.csvtable th{
+  text-transform: uppercase;
+  font-weight: 300;
+  height: 30px;
+}
+
+.csvtable th {
+  padding: 10px 10px;
+}
 /*--mdaTableContainer --*/
 
 .mdaTableContainer {
@@ -612,6 +683,9 @@ svg.reversed path{
 }
 
 .button-container .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   position: absolute;
   opacity: 0.75;
@@ -675,8 +749,9 @@ svg.reversed path{
 .infocontainer {
   display: flex;
   flex-direction: column;
-  height: 4em;
+  height: 57vh;
   justify-content: space-between;
+  row-gap: 2rem;
 }
 
 
@@ -865,7 +940,7 @@ div[class^="gridtab"] {
 }
 
 .member img {
-  max-height: 30vh;
+  max-height: 360px;
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 

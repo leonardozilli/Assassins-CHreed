@@ -1,16 +1,7 @@
 Subject,Predicate,Object
 "GamePro Magazine, issue 252(WHO)",dcterms:publisher,IDG
-"GamePro Magazine, issue 252(WHAT)",frbr:partOf,GamePro Magazine
 "GamePro Magazine, issue 252(WHEN)",fabio:publicationDate,9/9/2009
 "GamePro Magazine, issue 252(WHERE)",fabio:hasPlaceOfPublication,United States
+"GamePro Magazine, issue 252(WHAT)",frbr:partOf,GamePro Magazine
 "GamePro Magazine, issue 252(WHAT)",crm:P2_has_type,Magazine
 "GamePro Magazine, issue 252(WHAT)",crm:P72_has_language,English
-IDG,dbo:fullname,International Data Group
-IDG,dbo:headquarter,Needham
-IDG,crm:P52_has_current_owner,Blackstone INC.
-IDG,owl:sameAs,http://viaf.org/viaf/154561872
-IDG,dcterms:publisher,GamePro Magazine
-Needham,owl:sameAs,http://www.geonames.org/4945055/needham.html
-Blackstone INC.,owl:sameAs,http://viaf.org/viaf/2598531111
-GamePro Magazine,dbo:firstPublicationDate,1989
-GamePro Magazine,dbo:lastPublicationDate,2011

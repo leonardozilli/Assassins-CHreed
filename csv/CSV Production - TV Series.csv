@@ -9,11 +9,3 @@ Assassin's Creed: Lineage(WHAT),schema:name,Assassin's Creed: Lineage
 Assassin's Creed: Lineage(WHAT),schema:genre,Action
 Assassin's Creed: Lineage(WHAT),schema:rangeIncludes,TV Mini Series
 Assassin's Creed: Lineage(WHAT),schema:contentRating,GB-15
-Assassin's Creed II,rdau:P60220,Assassin's Creed: Lineage
-Romano Orzari,schema:birthPlace,Montreal
-Romano Orzari,schema:birthDate,12/12/1974
-Romano Orzari,owl:sameAs,https://viaf.org/viaf/231858819
-Yves Simoneau,schema:birthPlace,Quebec City
-Yves Simoneau,schema:birthDate,28/10/1955
-Yves Simoneau,owl:sameAs,https://viaf.org/viaf/32205962
-Yves Guillemot,owl:sameAs,https://viaf.org/viaf/1711154741633953110008/

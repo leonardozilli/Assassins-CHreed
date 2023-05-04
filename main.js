@@ -519,6 +519,18 @@ function selectTab(){
     }
 }
 
+function csvTabs() {
+    csvtabletabs = document.getElementsByClassName('csvtablestab');
+    csvtables = document.getElementsByClassName('csvtable')
+    Array.from(csvtabletabs).forEach(csvtabletab => csvtabletab.addEventListener('click', function (e) {
+        Array.from(csvtabletabs).forEach(csvtable => csvtable.classList.remove('active'));
+        csvtabletab.classList.add('active')
+        table = csvtabletab.innerHTML.replace(' ', '_')
+        Array.from(csvtables).forEach(csvtable => csvtable.classList.add('hidden'));
+        document.getElementById(table).classList.remove('hidden');
+    }))
+}
+
 
 
 
@@ -545,6 +557,6 @@ $(document).ready(function () {
     zoom3();
     zoom4();
     selectTab();
-
+    csvTabs();
 
 });
