@@ -1,0 +1,24 @@
+Subject,Predicate,Object
+"""Assassin’s Creed II: 
+The Original Game Soundtrack""(WHO)",mo:composer,Jesper Kyd
+"""Assassin’s Creed II: 
+The Original Game Soundtrack""(WHERE)",mo:engineered,"Capitol Studios, Hollywood"
+"Capitol Studios, Hollywood(WHERE)",dcterms:coverage,34.1031°N 118.3262°W
+"""Assassin’s Creed II: 
+The Original Game Soundtrack""(WHERE)",mo:publishing_location,worldwide
+"""Assassin’s Creed II: 
+The Original Game Soundtrack""(WHEN)",mo:duration,1:53:00
+"""Assassin’s Creed II: 
+The Original Game Soundtrack""(WHAT)",mo:upc,3700551700578
+"""Assassin’s Creed II: 
+The Original Game Soundtrack""(WHAT)",mo:release_type,Soundtrack
+"""Assassin’s Creed II: 
+The Original Game Soundtrack""(WHAT)",mo:genre,Orchestral
+"""Assassin’s Creed II: 
+The Original Game Soundtrack""(WHAT)",mo:genre,Classical
+"""Assassin’s Creed II: 
+The Original Game Soundtrack""(WHAT)",dcterms:title,"""Assassin’s Creed II: The Original Game Soundtrack"""
+Assassin's Creed II,cgo:has_audio,"""Assassin’s Creed II: The Original Game Soundtrack"""
+Jesper Kyd,owl:sameAs,https://viaf.org/viaf/226081868/
+Jesper Kyd,schema:birthDate,03/02/1972
+Jesper Kyd,schema:birthPlace,Hørsholm

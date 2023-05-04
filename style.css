@@ -646,9 +646,9 @@ svg.reversed path{
 .iteminfo {
   position: absolute;
   width: 25vw;
-  height: 60vh;
-  left: 60vw;
-  margin-top: 7vh;
+  height: 70vh;
+  left: 65vw;
+  margin-top: 6vh;
   background-color: #4e4946d8;
   clip-path: polygon(var(--corner-offset) 0%, 100% 0, 100% calc(100% - var(--corner-offset)), calc(100% - var(--corner-offset)) 100%, 0 100%, 0% calc(0% + var(--corner-offset)));
 }
@@ -675,9 +675,8 @@ svg.reversed path{
 .infocontainer {
   display: flex;
   flex-direction: column;
-  height: 20em;
+  height: 4em;
   justify-content: space-between;
-  margin-top: 3rem;
 }
 
 
@@ -690,10 +689,11 @@ svg.reversed path{
   color: white;
   text-transform: uppercase;
   font-weight: 300;
+  font-size: 1.5rem;
 }
 
 .itemDescription {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 
@@ -761,13 +761,13 @@ svg.reversed path{
 
 
 
-.gridtabs {
+.gridstabscontainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 10px;
 }
 
-.conceptualmodel_container > .gridtabs {
+.conceptualmodel_container > .gridstabscontainer {
   grid-template-columns: 1fr;
 }
 
@@ -777,7 +777,7 @@ svg.reversed path{
   font-weight: 200;
 }
 
-.gridtabs > div{
+.gridstabscontainer > div{
   display: grid;
   place-items: center;
   background-color: #dadbd2;
@@ -792,7 +792,7 @@ svg.reversed path{
   background-color: #f4f4f4;
   opacity: 0.8;
 }
-.gridtabs > div.active {
+.gridstabscontainer > div.active {
   background-color: #f4f4f4;
   opacity: 0.6;
 }
@@ -800,6 +800,13 @@ svg.reversed path{
 .gridcontent {
   box-shadow: -1px 1px 20px 0px #9c9c9c59;
   overflow: hidden;
+  border: 2px solid grey;
+  border-radius: 1px;
+}
+
+div[class^="gridtab"] {
+  border: 2px solid grey;
+  border-radius: 1px;
 }
 
 #zoom, #zoom2, #zoom3, #zoom4{
@@ -830,7 +837,7 @@ svg.reversed path{
 
 #zoomcontainer4 {
   height: 60vh;
-  border: 3px solid grey;
+  border: 2px solid grey;
   border-radius: 2px;
 }
 

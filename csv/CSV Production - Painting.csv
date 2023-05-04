@@ -1,0 +1,19 @@
+Subject,Predicate,Object
+"""Ritrovamento del cadavere di Jacopo de’ Pazzi""(WHO)",dcterms:creator,"Odoardo
+Borrani"
+"""Ritrovamento del cadavere di Jacopo de’ Pazzi""(WHO)",crm:P50_has_current_keeper,Gli Uffizi
+"""Ritrovamento del cadavere di Jacopo de’ Pazzi""(WHERE)",dc:coverage,Florence
+"""Ritrovamento del cadavere di Jacopo de’ Pazzi""(WHEN)",dcterms:date,1864
+"""Ritrovamento del cadavere di Jacopo de’ Pazzi""(WHAT)",crm:P102_has_title,"""Ritrovamento del cadavere di Jacopo de’ Pazzi"""
+"""Ritrovamento del cadavere di Jacopo de’ Pazzi""(WHAT)",crm:P2_has_type,painting
+"""Ritrovamento del cadavere di Jacopo de’ Pazzi""(WHAT)",a-dd:hasMaterialOrTechnique,oil on canvas
+"""Ritrovamento del cadavere di Jacopo de’ Pazzi""(WHAT)",crm:P43_has_dimension,145 x 121 cm
+"""Ritrovamento del cadavere di Jacopo de’ Pazzi""(WHAT)",crm:P129_is_about,Jacopo de' Pazzi
+Odoardo Borrani,schema:birthPlace,Pisa
+Odoardo Borrani,schema:deathPlace,Florence
+Odoardo Borrani,schema:birthDate,22/08/1833
+Odoardo Borrani,schema:deathDate,14/09/1905
+Odoardo Borrani,owl:sameAs,https://viaf.org/viaf/95871625/
+Uffizi Gallery,owl:sameAs,http://viaf.org/viaf/169401840
+Pazzi Conspiracy,crm:P11_had_participant,Jacopo de' Pazzi
+Jacopo de' Pazzi,vgo:isCharacterInGame,Assassin's Creed II

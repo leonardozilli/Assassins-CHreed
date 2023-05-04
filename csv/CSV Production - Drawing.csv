@@ -1,0 +1,8 @@
+Subject,Predicate,Object
+"Codice Atlantico (Codex Atlanticus), f. 860 recto(WHAT)",crm:P2_has_type,Drawing
+"Codice Atlantico (Codex Atlanticus), f. 860 recto(WHAT)",crm:P129_is_about,"""Digitalised rendition of Flying machine"""
+"Codice Atlantico (Codex Atlanticus), f. 860 recto(WHAT)",crm:P32_used_general_technique ,Pen and ink
+"Codice Atlantico (Codex Atlanticus), f. 860 recto(WHEN)",dcterms:datecreated,1478–1519
+"Codice Atlantico (Codex Atlanticus), f. 860 recto(WHERE)",crm:E147_was_curated_by ,"Biblioteca
+Ambrosiana"
+"Codice Atlantico (Codex Atlanticus), f. 860 recto(WHO)",dcterms:creator,Leonardo da Vinci
