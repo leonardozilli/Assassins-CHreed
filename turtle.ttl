@@ -1,0 +1,20 @@
+@base <https://leonardozilli.it/Assassins-CHreed/> .
+
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+@prefix owl: <http://www.w3.org/2002/07/owl>  .
+@prefix rdf: <http://www.w3.org/2000/01/rdf-schema>  .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema>  .
+@prefix foaf: <http://xmlns.com/foaf/0.1/>  .
+@prefix dcterms: <http://purl.org/dc/terms/>  .
+@prefix mo: <http://purl.org/ontology/mo/>  .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>  .
+@prefix dbo: <https://dbpedia.org/ontology/>  .
+@prefix fabio: <http://purl.org/spar/fabio/>  .
+@prefix arco: <https://w3id.org/arco/ontology/arco/>  .
+@prefix a-ip: <https://w3id.org/arco/ontology/immovable-property/>  .
+@prefix rdau: <https://www.rdaregistry.info/Elements/>  .
+@prefix frbre: <https://vocab.org/frbr/extended/>  .
+
+#==== ITEMS ====
+
