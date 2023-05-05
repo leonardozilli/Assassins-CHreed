@@ -86,7 +86,7 @@
 #~ Palazzo Vecchio ~
 <place/PalazzoVecchio> a arco:ArchitecturalOrLandscapeHeritage;
     rdf:label "Palazzo Vecchio";
-    rdf:type "Building";
+    rdf:type a-ip:Building;
     owl:sameas viaf:125014958;
     crm:P45_consists_of crm:E57_Material;
     dcterms:title "Palazzo Vecchio"^^xsd:string;
