@@ -266,9 +266,6 @@ svg.reversed path{
   d: path("M0,50 l35,-50 l35,50");
 }
 
-.menu_label {
-}
-
 .selected {
   position: relative;
   font-size: 120%;
@@ -297,6 +294,23 @@ svg.reversed path{
   height: 100vh;
 }
 
+.textarea{
+  padding: 2rem 1rem;
+  width: 80vw;
+  margin: 5vh auto;
+  background-color: #f4f4f4;
+  opacity: 0.8;
+  box-shadow: -1px 1px 20px 0px #9c9c9c59;
+  font-size: 1rem;
+  font-weight: 300;
+
+}
+
+.textarea > p > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: inherit;
+}
 
 /*-- mdTable --*/
 .mdTableContainer {
@@ -361,40 +375,47 @@ svg.reversed path{
   flex-direction: row;
   max-width: 80vw;
   justify-content: center;
+  align-items: center;
   margin: auto;
   gap: 1rem;
+  margin-top: 5vh;
+  height: 10vh;
 }
 
 .csvtablestab {
-  background-color: rgba(109, 45, 46, 1);
+  background-color: #cb4c48;
   color: white;
   text-transform: uppercase;
   padding: 1rem 0.5rem;
-  font-size: 1rem;
-  font-weight: 300;
-  margin-top: 10vh;
+  font-size: 0.9rem;
+  font-weight: 400;
   text-align: center;
   cursor: pointer;
   display: flex;
+  min-width: 7vw;
   align-items: center;
   justify-content: center;
-  width: 7em;
   height: 7vh;
   clip-path: polygon(1rem 0%, 100% 0, 100% calc(100% - 1rem), calc(100% - 1rem) 100%, 0 100%, 0% calc(0% + 1rem));
   z-index: 1;
+  transition: all 0.2s linear;
+  opacity: 0.9;
+  position: relative;
 }
 
 .csvtablestab::before {
   content: '';
-  position: relative;
+  position: absolute;
   inset: 0;
-  background: whitesmoke;
-  z-index: 3;
-  clip-path: polygon(14px calc(0% + 2px), calc(100% - 2px) calc(0% + 2px), calc(100% - 2px) calc(100% - 14px), calc(100% - 14px) calc(100% - 2px), calc(0% + 2px) calc(100% - 2px), calc(0% + 2px) calc(0% + 14px));
+  background-color: #6d2d2e;
+  z-index: -1;
+  clip-path: polygon(calc(1rem + 1px) calc(0% + 2px), calc(100% - 2px) calc(0% + 2px), calc(100% - 2px) calc(100% - calc(1rem + 1px)), calc(100% - calc(1rem + 1px)) calc(100% - 2px), calc(0% + 2px) calc(100% - 2px), calc(0% + 2px) calc(0% + calc(1rem + 1px)));
 }
 
 .csvtablestab.active {
-  font-weight: 500;
+  font-weight: 600;
+  height: 10vh;
+  opacity: 1;
 }
 
 .csvtable {
@@ -581,7 +602,7 @@ svg.reversed path{
   translate: -7vw 10vh;
 }
 #item_6.carousel_item.next.four{
-  translate: -7vw 10vh;
+  translate: -7vw 7vh;
 }
 #item_6.carousel_item.prev{
   translate: -7vw 10vh;
@@ -823,8 +844,8 @@ svg.reversed path{
 .mapcontainer {
   display: grid;
   width: 80vw;
-  height: 70vh;
-  margin: 10vh auto;
+  height: 90vh;
+  margin: 5vh auto;
   grid-template-rows: 1fr 6fr;
   row-gap: 10px;
 }
@@ -855,7 +876,7 @@ svg.reversed path{
 .gridstabscontainer > div{
   display: grid;
   place-items: center;
-  background-color: #dadbd2;
+  background-color: #c7c7c7;
   opacity: 0.5;
   border-radius: 1px;
   cursor: pointer;
@@ -863,16 +884,14 @@ svg.reversed path{
   transition: all 0.5s ease-out;
 }
 
-.gridcontent {
-  background-color: #f4f4f4;
-  opacity: 0.8;
-}
 .gridstabscontainer > div.active {
   background-color: #f4f4f4;
   opacity: 0.6;
 }
 
 .gridcontent {
+  background-color: #f4f4f4;
+  opacity: 0.8;
   box-shadow: -1px 1px 20px 0px #9c9c9c59;
   overflow: hidden;
   border: 2px solid grey;
@@ -911,7 +930,7 @@ div[class^="gridtab"] {
 }
 
 #zoomcontainer4 {
-  height: 60vh;
+  height: 80vh;
   border: 2px solid grey;
   border-radius: 2px;
 }
@@ -919,7 +938,7 @@ div[class^="gridtab"] {
 .ttlcontainer {
   display: grid;
   width: 80vw;
-  margin: 10vh auto;
+  margin: 5vh auto;
   grid-template-rows: 1fr;
   row-gap: 10px;
 }
@@ -937,17 +956,35 @@ div[class^="gridtab"] {
   flex-direction: row;
   justify-content: space-around;
   margin: 10vh 10vw;
+  gap: 2rem;
+}
+
+.members .imgcontainer {
+  position: relative;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  background-color: #a3a19b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 258px;
+  width: 258px;
+}
+
+.members .imgcontainer > svg{
+  position: absolute;
 }
 
 .member img {
-  max-height: 360px;
+  max-height: 240px;
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  position: relative;
 }
 
 .member {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
 }
 
