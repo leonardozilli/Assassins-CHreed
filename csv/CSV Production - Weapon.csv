@@ -8,4 +8,4 @@ Venetian Falchion(WHAT),crm:P2_has_type,sword
 Venetian Falchion(WHAT),crm:P45_consists_of,steel
 Venetian Falchion(WHAT),crm:P45_consists_of,gold
 Venetian Falchion(WHAT),crm:P45_consists_of,textile
-Venetian Falchion(WHAT),crm:P102_has_title,Falchion
+Venetian Falchion(WHAT),dcterms:title,Falchion

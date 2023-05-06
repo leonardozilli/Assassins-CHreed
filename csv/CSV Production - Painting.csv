@@ -4,7 +4,7 @@ Borrani"
 """Ritrovamento del cadavere di Jacopo de’ Pazzi""(WHO)",crm:P50_has_current_keeper,Gli Uffizi
 """Ritrovamento del cadavere di Jacopo de’ Pazzi""(WHERE)",dc:coverage,Florence
 """Ritrovamento del cadavere di Jacopo de’ Pazzi""(WHEN)",dcterms:date,1864
-"""Ritrovamento del cadavere di Jacopo de’ Pazzi""(WHAT)",crm:P102_has_title,"""Ritrovamento del cadavere di Jacopo de’ Pazzi"""
+"""Ritrovamento del cadavere di Jacopo de’ Pazzi""(WHAT)",dcterms:title,"""Ritrovamento del cadavere di Jacopo de’ Pazzi"""
 """Ritrovamento del cadavere di Jacopo de’ Pazzi""(WHAT)",crm:P2_has_type,painting
 """Ritrovamento del cadavere di Jacopo de’ Pazzi""(WHAT)",a-dd:hasMaterialOrTechnique,oil on canvas
 """Ritrovamento del cadavere di Jacopo de’ Pazzi""(WHAT)",crm:P43_has_dimension,145 x 121 cm

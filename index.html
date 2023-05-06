@@ -83,7 +83,7 @@
           <div>
             <ul class="menu_subitems " id="menu_subitem0" style="display: none;">
               <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label subSelected"
-                  onmouseover=subHover(this) onclick="scrollSmoothTo('csv_tables')">CSV Tables</a></li>
+                  onmouseover=subHover(this) onclick="scrollSmoothTo('csv_tables')">Items Description</a></li>
               <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label subSelected"
                   onmouseover=subHover(this) onclick="scrollSmoothTo('rdf_production')">RDF Production</a></li>
               <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label"
@@ -110,13 +110,11 @@
         <h3>THE DOMAIN</h3>
       </span>
     </div>
-    <div class="textarea">
-      <p>This project is devoted to knowledge organization and digital methods in the cultural heritage domain. From the beginning of our idea, we decided to seek the possibility of intersectionality between cultural heritage and video games, which are seemingly incompatible since the former is always connected to something old, historical and traditional while the latter is a newly-born in the digital era, consumed by youngsters as a kind of pure entertainment.
-Henceforth, when it comes to the intersection between cultural heritage and video games, a lot of us will only think of “serious games” which separate themselves from entertaining video games and manifest their primary function merely in education and enlightenment, and nowadays they are predominantly used in the domain of museum gamification and public science. Can entertaining video games also be welcomed to the “serious” club of cultural heritage? Or do we have to set such a distinct binary division between seriousness and entertainment at all?
+    <div class="textarea" id="domaintext">
+      <p><b id="btitle">Assassin's Creed II</b> is a critically acclaimed action-adventure game developed by Ubisoft Montreal and released in 2009. The game is set in Renaissance-era Italy and follows the story of Ezio Auditore da Firenze, a young nobleman turned assassin, as he seeks revenge against those who have wronged his family.</p>
+      <p>Known for its immersive open-world environment, engaging storyline, and deep character development, the game cemented its place as one of the most popular and <b>influential</b> video games of all time, also thanks to the wide range of faithful depictions of <b>cultural heritage items</b> that permeate its whole narrative. In the game, the players are free to explore meticulous recreations of real-world locations such as the cities of Florence, Venice, and Rome, each of which is filled with accurate portrayals of <b>historic landmarks</b> and buildings, as well as a number of smaller towns and villages. The game also features a number of famous <b>artworks</b>, many of which can be found in the virtual galleries of the game's various palaces and museums, as well as many other lesser-known cultural heritage items, such as weapons and traditional dresses.</p>
 
-In this project, we would like to discover the potential of not “serious” video games as a medium to preserve and promote cultural heritage through the development of linked open data. We chose the second major installment of the Assassin’s Creed series, a flagship game franchise of Ubisoft noted for their depiction of real historical events and digitization of historical monuments, some of which are so real that after the Notre-Dame fire, people can still visit the cathedral precisely modeled to scale in Assassin's Creed Unity.
-
-We chose Assassin's Creed II as our main topic because it is set in an open world based on late 15th-century Renaissance Italy, offering digital reproduction of Florence and Venice city, the historical monuments and items of Italy, and historical figures such as Leonardo da Vinci, Lorenzo de’ Medici with whom we’re all familiar with. Through our linked open data project, it could be seen clearly how this game is intertwined within a web of cultural heritages, and how is it able to bring the magnificent beauty of Renaissance Italy to more than 9 million players all over the world. </p>
+      <p>With such an extended quantity of cultural objects in it, the game presented itself as a perfect candidate for this Linked Open Data project,which aims to make us of <b>LOD tools</b>  to describe in an interoperable and semantically meaningful way 10 of these objects.</p>
     </div>
   </section>
   <section id="items">
@@ -308,6 +306,10 @@ We chose Assassin's Creed II as our main topic because it is set in an open worl
         <h3>CONCEPTUAL MAP & E/R MODEL</h3>
       </span>
     </div>
+      <div class="textarea">
+        <p>The first step was to model our main topic and the 10 items we have chosen to represent the domain of study into a <b>conceptual map</b>, using natural language to create relations between each item and some of the most relevant descriptive characteristics we extracted from them, answering to the questions of <b>who</b>, <b>what</b>, <b>when </b>and <b>where</b>.</p>
+        <p>We then translated the conceptual map into a more formal <b>E/R model</b>, abstracting the data and relationships from the previous map into more universal-fitting ones in order to graphically represent our domain employing a more general perspective.</p>
+      </div>
     <div class="mapcontainer conceptualmapercontainer">
       <div class="gridstabscontainer">
         <div class="gridtab1 active" id="conceptualmaptab">
@@ -339,6 +341,10 @@ We chose Assassin's Creed II as our main topic because it is set in an open worl
         <h3>METADATA ANALYSIS</h3>
       </span>
     </div>
+    <div class="textarea">
+      <p>Coming back to the institutions and providers that held our items, we analysed which methods and <b>metadata standards</b> they used to describe these items. While for most of them the scouting for the standards utilised has been straightforward and painless, in some cases we were not able to directly access or retrieve the standards used, such as for the "Codice Atlantico (Codex Atlanticus), f. 860 recto" collected by Biblioteca Ambrosiana, the TV series "Assassin's Creed: Lineage" held by the online database IMDb and the statue "Perseus with the head of Medusa".<br> 
+      In these cases, we chose to use the standard we thought was most appropriate for the type of object and institution in question.</p>
+    </div>
     <div class="siteTable mdTableContainer">
       <table class="mdTable">
         <thead>
@@ -355,71 +361,71 @@ We chose Assassin's Creed II as our main topic because it is set in an open worl
             <td>"Ritrovamento del cadavere di Jacopo de' Pazzi"</td>
             <td>Painting</td>
             <td>Catalogo Generale dei Beni Culturali</td>
-            <td>ArCo</td>
-            <td>ArCo</td>
+            <td><a href="https://dati.beniculturali.it/arco/primer-guide-v1.0-it.html" target="_blank">ArCo</a></td>
+            <td><a href="https://dati.beniculturali.it/arco/primer-guide-v1.0-it.html" target="_blank">ArCo</a></td>
           </tr>
           <tr>
             <td>"Assassin’s Creed II: The Original Game Soundtrack"</td>
             <td>Soundtrack</td>
             <td>Musicbrainz.org</td>
-            <td>MMD/XML-2.0</td>
-            <td>MMD/XML-2.0</td>
+            <td><a href="https://musicbrainz.org/doc/MusicBrainz_XML_Meta_Data" target="_blank">MMD/XML-2.0</a></td>
+            <td><a href="https://musicbrainz.org/doc/MusicBrainz_XML_Meta_Data" target="_blank">MMD/XML-2.0</a></td>
           </tr>
           <tr>
             <td>Codex Atlanticus, f.860 recto</td>
             <td>Drawing</td>
             <td>Biblioteca Ambrosiana</td>
             <td>/</td>
-            <td>Dublin Core</td>
+            <td><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/" target="_blank">Dublin Core</a></td>
           </tr>
           <tr>
             <td>Assassin's Creed: Lineage</td>
             <td>TV Mini Series</td>
             <td>IMDb</td>
             <td>/</td>
-            <td>schema.org</td>
+            <td><a href="https://schema.org/" target="_blank">schema.org</a></td>
           </tr>
           <tr>
             <td>GamePro n.252</td>
             <td>Magazine</td>
             <td>Belmont College Library</td>
             <td>MARC</td>
-            <td>MARC21</td>
+            <td><a href="https://www.loc.gov/marc/" target="_blank">MARC21</a></td>
           </tr>
           <tr>
             <td>Physical copy of Assassin's Creed II</td>
             <td>DVD</td>
             <td>University of Calgary</td>
             <td>MARC</td>
-            <td>MARC21</td>
+            <td><a href="https://www.loc.gov/marc/" target="_blank">MARC21</a></td>
           </tr>
           <tr>
             <td>"Assassin's Creed: Renaissance"</td>
             <td>Book</td>
             <td>Library of Congress</td>
             <td>MARC</td>
-            <td>MARC21</td>
+            <td><a href="https://www.loc.gov/marc/" target="_blank">MARC21</a></td>
           </tr>
           <tr>
             <td>Venetian Falchion</td>
             <td>Weapon</td>
             <td>The Metropolitan Museum of Art</td>
-            <td>MET'S API</td>
-            <td>CIDOC-CRM</td>
+            <td><a href="https://metmuseum.github.io/" target="_blank">MET'S API</a></td>
+            <td><a href="https://metmuseum.github.io/" target="_blank">MET'S API</a></td>
           </tr>
           <tr>
             <td>Perseus with the head of Medusa</td>
             <td>Statue</td>
             <td>Bildindex der Kunst und Architektur</td>
             <td>/</td>
-            <td>CIDOC-CRM</td>
+            <td><a href="https://www.cidoc-crm.org/html/cidoc_crm_v7.1.2.html" target="_blank">CIDOC-CRM</a></td>
           </tr>
           <tr>
             <td>Palazzo Vecchio</td>
             <td>Building</td>
             <td>Catalogo Generale dei Beni Culturali</td>
-            <td>ArCo</td>
-            <td>ArCo</td>
+            <td><a href="https://dati.beniculturali.it/arco/primer-guide-v1.0-it.html" target="_blank">ArCo</a></td>
+            <td><a href="https://dati.beniculturali.it/arco/primer-guide-v1.0-it.html" target="_blank">ArCo</a></td>
           </tr>
         </tbody>
 
@@ -438,6 +444,9 @@ We chose Assassin's Creed II as our main topic because it is set in an open worl
         </svg>
         <h3>METADATA ALIGNMENT</h3>
       </span>
+    </div>
+    <div class="textarea">
+      <p>After having identified the metadata <b>elements</b> and <b>properties</b> described by the institutions and the corresponding standards they used to do so, we have aligned those metadata elements and properties that are useful to address information related to people, places, dates, and subjects/concepts.</p>
     </div>
     <div class="metadataTableTab">
       <ul>
@@ -656,6 +665,11 @@ We chose Assassin's Creed II as our main topic because it is set in an open worl
         <h3>THEORETICAL & ENHANCED E/R MODEL</h3>
       </span>
     </div>
+      <div class="textarea">
+        <p>We moved further in our modeling effort by adding a new layer, that of <b>data interpretation</b>. This theoretical model is expressed in natural language and provides additional and more detailed informations about the items, offering a more comprehensive understanding of the entities associated with the central topic.
+        </p>
+        <p>Consequently, we also updated the original E/R model on the basis of the new theoretical model, enhancing its descriptive and informative capabilities by adding the <b>new entities and relationships</b>.</p>
+      </div>
     <div class="mapcontainer theoretical_enhanced_container">
       <div class="gridstabscontainer">
         <div class="gridtab2 active" id="theoreticalmodeltab">
@@ -686,12 +700,10 @@ We chose Assassin's Creed II as our main topic because it is set in an open worl
         <h3>CONCEPTUAL MODEL</h3>
       </span>
     </div>
-    <div class="mapcontainer conceptualmodel_container">
-      <div class="gridstabscontainer">
-        <div class="gridtab3 active" id="conceptualmodeltab">
-          <span>CONCEPTUAL MODEL</span>
-        </div>
+      <div class="textarea">
+        <p>We then finally moved from the previously shown theoretical model to a more formal representation of our data, adopting an <b>ontological approach</b>. In this way, we constructed a <b>conceptual model</b> that incorporates established schemas and vocabularies to accurately portray our scenario in a cohesive manner.</p>
       </div>
+    <div class="mapcontainer conceptualmodel_container">
       <div class="gridcontent" id="zoomcontainer3">
         <div class="imagecontainer" id="zoom3">
           <img id="conceptualmodel" src="images/conceptualmodel.svg" alt="">
@@ -709,8 +721,12 @@ We chose Assassin's Creed II as our main topic because it is set in an open worl
           style="margin: 0 1rem 0 4rem; display: inline-block; vertical-align: middle;">
           <path d="M 0 0 M 2 1 L 1 0 L 2 -1 L 3 0 L 2 1 M 2 2 L 4 0 L 2 -2 L 0 0 L 2 2" fill="white" />
         </svg>
-        <h3>CSV TABLES</h3>
+        <h3>ITEMS DESCRIPTION</h3>
       </span>
+    </div>
+    <div class="textarea">
+      <p>With our modeling phase concluded, we revisited the items to depict them on the basis of the conceptual model that was developed. Each item is described in a statement codified in the form of a <b>semantic triple</b>, each row in the following table depicting a <b>subject-predicate-object</b>. The subjects and objects are expressed in natural language, whereas the predicates are conveyed through the ontologies identified in the preceding step.</p>
+      <p>The description of each of the items are stored in <b>CSV</b> files, downloadable by clicking on the icon on the upper left cell of each table.</p>
     </div>
     <div class="siteTable csvTablesContainer">
       <ul class="csvtablestabs">
@@ -800,7 +816,7 @@ We chose Assassin's Creed II as our main topic because it is set in an open worl
         <tr>
           <th>(WHAT)</th>
           <td>&quot;Ritrovamento del cadavere di Jacopo de’ Pazzi&quot;</td>
-          <td>crm:P102_has_title</td>
+          <td>dcterms:title</td>
           <td>&quot;Ritrovamento del cadavere di Jacopo de’ Pazzi&quot;</td>
         </tr>
         <tr>
@@ -1607,7 +1623,7 @@ We chose Assassin's Creed II as our main topic because it is set in an open worl
         <tr>
           <th>(WHAT)</th>
           <td>Venetian Falchion</td>
-          <td>crm:P102_has_title</td>
+          <td>dcterms:title</td>
           <td>Falchion</td>
         </tr>
       </table>
@@ -1738,6 +1754,28 @@ We chose Assassin's Creed II as our main topic because it is set in an open worl
         <h3>RDF PRODUCTION</h3>
       </span>
     </div>
+    <div class="textarea">
+      <p>The subsequent phase involved converting the previously-shown statements into <b>RDF</b> format, in our case using the <b>Turle syntax</b>. Prior to composing the statements, we compiled a list of all the prefixes that we intended to use, and we then minted a set of URIs to identify the primary entities within the domain. We also employed owl:sameas to establish links between certain elements of the project and corresponding authority records, such as VIAF and GeoNames.</p>
+      <p>
+We minted the following URIs:</p>
+      <ul>
+        <li><b>Assassin’s Creed II:</b> https://w3id.org/Assassins-CHreed/game/AssassinsCreedII</li>
+        <li><b>Ritrovamento del cadavere di Jacopo de’ Pazzi:</b> https://w3id.org/Assassins-CHreed/painting/RitrovamentoCadavereJacopoDePazzi</li>
+        <li><b>Perseus with the Head of Medusa:</b> https://w3id.org/Assassins-CHreed/sculpture/PerseusWithTheHeadOfMedusa</li>
+        <li><b>Pazzi Conspiracy:</b> https://w3id.org/Assassins-CHreed/event/PazziConspiracy</li>
+        <li><b>Palazzo Vecchio:</b> https://w3id.org/Assassins-CHreed/place/PalazzoVecchio</li>
+        <li><b>Piazza della Signoria:</b> https://w3id.org/Assassins-CHreed/place/PiazzaDellaSignoria</li>
+        <li><b>Uffizi Gallery:</b> https://w3id.org/Assassins-CHreed/place/UffiziGallery</li>
+        <li><b>Loggia dei Lanzi:</b> https://w3id.org/Assassins-CHreed/place/LoggiaDeiLanzi</li>
+        <li><b>Pisa:</b> https://w3id.org/Assassins-CHreed/city/Pisa</li>
+        <li><b>Florence:</b> https://w3id.org/Assassins-CHreed/city/Florence</li>
+        <li><b>Colle di Val d'Elsa:</b> https://w3id.org/Assassins-CHreed/city/ColleDiValdElsa</li>
+        <li><b>Odoardo Borrani:</b> https://w3id.org/Assassins-CHreed/people/OdoardoBorrani</li>
+        <li><b>Jacopo de’ Pazzi:</b> https://w3id.org/Assassins-CHreed/people/JacopodePazzi</li>
+        <li><b>Arnolfo di Cambio:</b> https://w3id.org/Assassins-CHreed/people/ArnolfoDiCambio</li>
+        <li><b>Benvenuto Cellini:</b> https://w3id.org/Assassins-CHreed/people/BenvenutoCellini</li>
+      </ul>
+    </div>
     <div class="ttlcontainer">
       <script
         src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fleonardozilli%2FAssassins-CHreed%2Fblob%2Fmain%2Fturtle.ttl&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on"></script>
@@ -1757,7 +1795,7 @@ We chose Assassin's Creed II as our main topic because it is set in an open worl
       </span>
     </div>
     <div class="textarea">
-      <p>With the turtle files at our disposal, w visualized the serialization using <a href="https://www.ldf.fi/service/rdf-grapher" target="_blank">RDF Grapher</a>.</p>
+      <p>Lastly, we visualized the RDF serialization using <a href="https://www.ldf.fi/service/rdf-grapher" target="_blank">RDF Grapher</a>.</p>
     </div>
     <div class="mapcontainer ">
       <div class="gridcontent" id="zoomcontainer4">

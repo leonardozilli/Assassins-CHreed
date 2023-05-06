@@ -123,7 +123,11 @@ section:not(.main_menu) {
 
 .title > h1{
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: 2em;
+}
+
+.title > h6 {
+  font-size: 1.5rem;
 }
 
 .subtitle > h5 {
@@ -291,7 +295,7 @@ svg.reversed path{
 }
 
 .metadata {
-  height: 100vh;
+  height: 120vh;
 }
 
 .textarea{
@@ -303,7 +307,27 @@ svg.reversed path{
   box-shadow: -1px 1px 20px 0px #9c9c9c59;
   font-size: 1rem;
   font-weight: 300;
+}
 
+#domaintext {
+  text-align: center;
+}
+
+#btitle {
+  font-size: 1.2rem;
+}
+
+.textarea p {
+  margin-bottom: 1rem;
+}
+
+.textarea li {
+  list-style: disc;
+  margin-left: 2rem;
+}
+
+.textarea p:last-child{
+  margin-bottom: 0;
 }
 
 .textarea > p > a {
@@ -313,9 +337,6 @@ svg.reversed path{
 }
 
 /*-- mdTable --*/
-.mdTableContainer {
-}
-
 .mdTableContainer > table {
     height: 60vh;
     width: 80vw;
@@ -348,6 +369,11 @@ svg.reversed path{
   padding: 15px 10px;
 }
 
+td > a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .siteTable thead {
   background-image: linear-gradient(to right,#4e4946, #41423b);
   text-transform: uppercase;
@@ -367,7 +393,7 @@ svg.reversed path{
 /* csv tables */
 
 .csv_tables {
-  height: 110vh;
+  height: 125vh;
 }
 
 .csvtablestabs {
@@ -460,7 +486,7 @@ svg.reversed path{
 .mdaTableContainer {
   display: flex;
   align-items: center;
-  margin-top: 30vh;
+  margin-top: 35vh;
 }
 
 .metadataTable {
@@ -498,7 +524,7 @@ svg.reversed path{
 .metadataTableTab {
   position: absolute;
   text-transform: uppercase;
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 
 .metadata_item {
@@ -546,7 +572,7 @@ svg.reversed path{
 }
 
 .metadataalignment{
-  height: 80vh;
+  height: 100vh;
 }
 
 /*-- carousel --*/
@@ -863,8 +889,8 @@ svg.reversed path{
   column-gap: 10px;
 }
 
-.conceptualmodel_container > .gridstabscontainer {
-  grid-template-columns: 1fr;
+.conceptualmodel_container > .gridcontent {
+  height: 80vh;
 }
 
 .gridtab1 > span,
