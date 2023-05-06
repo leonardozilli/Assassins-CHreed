@@ -1,10 +1,16 @@
-@base <https://leonardozilli.it/Assassins-CHreed/>.
+#~ Base URI ~
+@base <https://w3id.org/Assassins-CHreed/>.
 
+#~ Authority prefixes ~
+@prefix geo: <http://www.geonames.org/>.
+@prefix viaf: <http://viaf.org/viaf/>. 
+@prefix wiki: <https://www.wikidata.org/wiki/>.
+
+#~ Prefixes ~
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix owl: <http://www.w3.org/2002/07/owl>.
 @prefix rdf: <http://www.w3.org/2000/01/rdf-schema>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
 @prefix mo: <http://purl.org/ontology/mo/>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
@@ -17,124 +23,124 @@
 @prefix vgo: <http://vocab.linkeddata.es/vgo/>.
 @prefix cgo: <http://autosemanticgame.eu/ontologies/cgo>.
 @prefix schema: <http://schema.org/>.
-@prefix viaf: <http://viaf.org/viaf/>. 
 @prefix a-dd: <http://w3id.org/arco/ontology/denotative-description/>.
 @prefix a-cd: <http://w3id.org/arco/ontology/context-description>.
 @prefix a-loc: <http://w3id.org/arco/ontology/location>.
 @prefix ma-ont: <http://www.w3.org/ns/ma-ont>.
 
+
 ###
 #~ Assassin's Creed II ~
-<https://leonardozilli.it/Assassins-CHreed/game/AssassinsCreedII> a schema:VideoGame;
-    crm:p62_depicts <https://leonardozilli.it/Assassins-CHreed/people/JacopodePazzi>;
-    ma-ont:depictsFictionalLocation <https://leonardozilli.it/Assassins-CHreed/place/PalazzoVecchio>;
-    foaf:depicts <https://leonardozilli.it/Assassins-CHreed/sculpture/PerseusWithTheHeadOfMedusa>.
+<game/AssassinsCreedII> a schema:VideoGame;
+    crm:p62_depicts <people/JacopodePazzi>;
+    ma-ont:depictsFictionalLocation <place/PalazzoVecchio>;
+    foaf:depicts <sculpture/PerseusWithTheHeadOfMedusa>.
 
 ###
 #~ Ritrovamento del cadavere di Jacopo de’ Pazzi ~
-<https://leonardozilli.it/Assassins-CHreed/painting/RitrovamentoCadavereJacopoDePazzi> a crm:E22_Human-Made_Object ;
+<painting/RitrovamentoCadavereJacopoDePazzi> a crm:E22_Human-Made_Object;
     rdf:label "Ritrovamento del cadavere di Jacopo de’ Pazzi";
-    dcterms:creator <https://leonardozilli.it/Assassins-CHreed/people/OdoardoBorrani>;
-    crm:P67_refers_to <https://leonardozilli.it/Assassins-CHreed/event/PazziConspiracy>;
-    crm:P43_has_dimension "145 x 121 cm";
-    crm:P50_has_current_keeper <https://leonardozilli.it/Assassins-CHreed/place/UffiziGallery>;
-    dcterms:coverage <https://leonardozilli.it/Assassins-CHreed/city/Florence>;
-	dcterms:date "1864";
-    crm:P102_has_title "Ritrovamento del cadavere di Jacopo de’ Pazzi";
-    crm:P2_has_type <https://www.wikidata.org/wiki/Q3305213>;
-    a-dd:hasMaterialOrTechnique <https://www.wikidata.org/wiki/Q174705>.
+    dcterms:creator <people/OdoardoBorrani>;
+    crm:P67_refers_to <event/PazziConspiracy>;
+    crm:P43_has_dimension "145 x 121 cm"^^xsd:string;
+    crm:P50_has_current_keeper <place/UffiziGallery>;
+    dcterms:coverage <city/Florence>;
+	dcterms:date "1864"^^xsd:gYear;
+    dcterms:title "Ritrovamento del cadavere di Jacopo de’ Pazzi"^^xsd:string;
+    crm:P2_has_type wiki:Q3305213;
+    a-dd:hasMaterialOrTechnique wiki:Q174705.
 
 #~ Items of "Ritrovamento del cadavere di Jacopo de’ Pazzi"
 #~ Florence ~
-<https://leonardozilli.it/Assassins-CHreed/place/UffiziGallery> a crm:E40_Legal_Body ;
+<place/UffiziGallery> a crm:E40_Legal_Body;
 	owl:sameas viaf:169401840;
-    dcterms:coverage <https://leonardozilli.it/Assassins-CHreed/city/Florence>.
+    dcterms:coverage <city/Florence>.
 
 #~ Odoardo Borrani ~
-<https://leonardozilli.it/Assassins-CHreed/people/OdoardoBorrani> a crm:E21_Person;
+<people/OdoardoBorrani> a crm:E21_Person;
     rdf:label "Odoardo Borrani";
-    schema:birthPlace <https://leonardozilli.it/Assassins-CHreed/city/Pisa>;
-    schema:deathPlace <https://leonardozilli.it/Assassins-CHreed/city/Florence>;
-    schema:birthDate "22/08/1833";
-    schema:deathDate "14/09/1905";
+    schema:birthPlace <city/Pisa>;
+    schema:deathPlace <city/Florence>;
+    schema:birthDate "22/08/1833"^^xsd:date;
+    schema:deathDate "14/09/1905"^^xsd:date;
     owl:sameAs viaf:95871625.
 
 #~ Jacopo de' Pazzi ~
-<https://leonardozilli.it/Assassins-CHreed/people/JacopodePazzi> a crm:E21_Person;
+<people/JacopodePazzi> a crm:E21_Person;
     rdf:label "Jacopo de' Pazzi";
-    crm:P129_is_subject_of <https://leonardozilli.it/Assassins-CHreed/painting/RitrovamentoCadavereJacopoDePazzi>;
-    schema:deathPlace <https://leonardozilli.it/Assassins-CHreed/place/PiazzaDellaSignoria>;
-    crm:P11_had_participant <https://leonardozilli.it/Assassins-CHreed/event/PazziConspiracy>.
+    crm:P129_is_subject_of <painting/RitrovamentoCadavereJacopoDePazzi>;
+    schema:deathPlace <place/PiazzaDellaSignoria>;
+    crm:P11_had_participant <event/PazziConspiracy>.
 
 #~ Florence ~
-<https://leonardozilli.it/Assassins-CHreed/city/Florence> a dbo:City;
+<city/Florence> a dbo:City;
     rdf:label "Florence";
-    owl:sameAs <https://www.geonames.org/3176959>.
+    owl:sameAs geo:3176959.
 
 #~ Uffizi Gallery ~
-<https://leonardozilli.it/Assassins-CHreed/place/UffiziGallery> a crm:E40_Legal_Body ;
+<place/UffiziGallery> a crm:E40_Legal_Body ;
 	owl:sameas viaf:169401840;
-    dcterms:coverage <https://leonardozilli.it/Assassins-CHreed/city/Florence>.
+    dcterms:coverage <city/Florence>.
 
 ###
 #~ Palazzo Vecchio ~
-<https://leonardozilli.it/Assassins-CHreed/place/PalazzoVecchio> a arco:ArchitecturalOrLandscapeHeritage;
+<place/PalazzoVecchio> a arco:ArchitecturalOrLandscapeHeritage;
     rdf:label "Palazzo Vecchio";
-    rdf:type "Building";
+    rdf:type a-ip:Building;
     owl:sameas viaf:125014958;
-    crm:P45_consists_of "solid rusticated stonework";
-    dcterms:title "Palazzo Vecchio";
-    dbo:architecturalStyle <https://www.wikidata.org/wiki/Q176483>;
-    a-cd:hasAuthor <https://leonardozilli.it/Assassins-CHreed/people/ArnolfoDiCambio>;
-    dbo:startDate "1299";
-    dbo:yearOfConstruction "1314";
-    dcterms:coverage "43°46′11″N 11°15′20″E";
-    dcterms:coverage <https://leonardozilli.it/Assassins-CHreed/city/Florence>;
-    a-loc:hasCulturalPropertyAddress <https://leonardozilli.it/Assassins-CHreed/place/PiazzaDellaSignoria>.
+    crm:P45_consists_of crm:E57_Material;
+    dcterms:title "Palazzo Vecchio"^^xsd:string;
+    dbo:architecturalStyle wiki:Q176483;
+    a-cd:hasAuthor <people/ArnolfoDiCambio>;
+    dbo:startDate "1299"^^xsd:gYear;
+    dbo:yearOfConstruction "1314"^^xsd:gYear;
+    dcterms:coverage "43°46′11″N 11°15′20″E"^^xsd:string;
+    dcterms:coverage <city/Florence>;
+    a-loc:hasCulturalPropertyAddress <place/PiazzaDellaSignoria>.
 
 #~ Items of "Palazzo Vecchio"~
 #~ Arnolfo di Cambio ~
-<https://leonardozilli.it/Assassins-CHreed/people/ArnolfoDiCambio> a foaf:Person;
+<people/ArnolfoDiCambio> a foaf:Person;
     rdf:label "Arnolfo di Cambio";
-    schema:birthPlace <https://leonardozilli.it/Assassins-CHreed/city/ColleDiValdElsa>;
-    schema:deathPlace <https://leonardozilli.it/Assassins-CHreed/city/Florence>;
-    schema:birthDate "1240";
-    schema:deathDate "8/03/1302";
+    schema:birthPlace <city/ColleDiValdElsa>;
+    schema:deathPlace <city/Florence>;
+    schema:birthDate "1240"^^xsd:gYear;
+    schema:deathDate "8/03/1302"^^xsd:date;
     owl:sameAs viaf:265308757.
 
 #~ Piazza della Signoria ~
-<https://leonardozilli.it/Assassins-CHreed/place/PiazzaDellaSignoria> a dcterms:Location;
+<place/PiazzaDellaSignoria> a dcterms:Location;
     rdf:label "Piazza della Signoria";
-    dcterms:coverage "43°46′11″N 11°15′20″E".
+    dcterms:coverage "43°46′11″N 11°15′20″E"^^xsd:string.
 
 ###
 #~ Perseus with the Head of Medusa ~
-<https://leonardozilli.it/Assassins-CHreed/sculpture/PerseusWithTheHeadOfMedusa> a crm:E22_Man-Made_Object;
+<sculpture/PerseusWithTheHeadOfMedusa> a crm:E22_Man-Made_Object;
     rdf:label "Perseus with the Head of Medusa";
-    crm:P53_has_former_or_current_location <https://leonardozilli.it/Assassins-CHreed/place/LoggiaDeiLanzi>;
+    crm:P53_has_former_or_current_location <place/LoggiaDeiLanzi>;
     schema:dateCreated crm:52_Time-Span;
-    dcterms:creator <https://leonardozilli.it/Assassins-CHreed/people/BenvenutoCellini>;
+    dcterms:creator <people/BenvenutoCellini>;
     crm:P2_has_type crm:E55_Type;
-    crm:P43_has_dimension "519 cm";
+    crm:P43_has_dimension "519 cm"^^xsd:string;
     crm:P45_consists_of crm:57_Material;
     crm:P129_is_about crm:E1_CRM_Entity;
     crm:P168_place_is_defined_by crm:E94_Space_Primitive;
-    crm:P53_has_former_or_current_location <https://leonardozilli.it/Assassins-CHreed/place/PiazzaDellaSignoria>.
+    crm:P53_has_former_or_current_location <place/PiazzaDellaSignoria>.
 
 #~ Items of "Perseus with the Head of Medusa" ~
 #~ Benevunto Cellini ~
-<https://leonardozilli.it/Assassins-CHreed/people/BenvenutoCellini> a crm:E21_Person;
+<people/BenvenutoCellini> a crm:E21_Person;
     rdf:label "Benvenuto Cellini";
     owl:sameAs viaf:56629983;
-    schema:birthDate "03/11/1500";
-    schema:deathDate "13/02/1571";
-    schema:birthPlace <https://leonardozilli.it/Assassins-CHreed/city/Florence>;
-    schema:deathPlace <https://leonardozilli.it/Assassins-CHreed/city/Florence>.
+    schema:birthDate "03/11/1500"^^xsd:date;
+    schema:deathDate "13/02/1571"^^xsd:date;
+    schema:birthPlace <city/Florence>;
+    schema:deathPlace <city/Florence>.
 
 #~ Loggia dei Lanzi ~
-<https://leonardozilli.it/Assassins-CHreed/place/LoggiaDeiLanzi> a crm:E53_Place;
+<place/LoggiaDeiLanzi> a crm:E53_Place;
     rdf:label "Loggia dei Lanzi";
     owl:sameAs viaf:173461368;
-    dcterms:coverage <https://leonardozilli.it/Assassins-CHreed/city/Florence>.
+    dcterms:coverage <city/Florence>.
 
 ###
