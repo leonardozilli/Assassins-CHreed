@@ -45,7 +45,7 @@
     crm:P43_has_dimension "145 x 121 cm"^^xsd:string;
     crm:P50_has_current_keeper <place/UffiziGallery>;
     dcterms:coverage <city/Florence>;
-	dcterms:date "1864"^^xsd:gYear;
+    dcterms:date "1864"^^xsd:gYear;
     dcterms:title "Ritrovamento del cadavere di Jacopo de’ Pazzi"^^xsd:string;
     crm:P2_has_type wiki:Q3305213;
     a-dd:hasMaterialOrTechnique wiki:Q174705.
@@ -53,7 +53,7 @@
 #~ Items of "Ritrovamento del cadavere di Jacopo de’ Pazzi"
 #~ Florence ~
 <place/UffiziGallery> a crm:E40_Legal_Body;
-	owl:sameas viaf:169401840;
+    owl:sameas viaf:169401840;
     dcterms:coverage <city/Florence>.
 
 #~ Odoardo Borrani ~
@@ -79,7 +79,7 @@
 
 #~ Uffizi Gallery ~
 <place/UffiziGallery> a crm:E40_Legal_Body ;
-	owl:sameas viaf:169401840;
+    owl:sameas viaf:169401840;
     dcterms:coverage <city/Florence>.
 
 ###
