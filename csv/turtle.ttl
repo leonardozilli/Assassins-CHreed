@@ -53,8 +53,8 @@
 #~ Items of "Ritrovamento del cadavere di Jacopo de’ Pazzi"
 #~ Florence ~
 <place/UffiziGallery> a crm:E40_Legal_Body;
-    owl:sameas viaf:169401840;
-    dcterms:coverage <city/Florence>.
+    rdf:label "Florence";
+    owl:sameAs geo:3176959.
 
 #~ Odoardo Borrani ~
 <people/OdoardoBorrani> a crm:E21_Person;
@@ -78,7 +78,7 @@
     owl:sameAs geo:3176959.
 
 #~ Uffizi Gallery ~
-<place/UffiziGallery> a crm:E40_Legal_Body ;
+<place/UffiziGallery> a crm:E40_Legal_Body;
     owl:sameas viaf:169401840;
     dcterms:coverage <city/Florence>.
 
