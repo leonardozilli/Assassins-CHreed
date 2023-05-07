@@ -11,8 +11,8 @@
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-2577.99 4937.82,-2577.99 4937.82,4 -4,4"/>
 <text text-anchor="middle" x="2466.91" y="-352.8" font-family="Times,serif" font-size="14.00">Namespaces:</text>
 <text text-anchor="middle" x="2466.91" y="-337.8" font-family="Times,serif" font-size="14.00">geo: http://www.geonames.org/</text>
-<text text-anchor="middle" x="2466.91" y="-322.8" font-family="Times,serif" font-size="14.00">viaf: http://viaf.org/viaf/</text>
-<text text-anchor="middle" x="2466.91" y="-307.8" font-family="Times,serif" font-size="14.00">wiki: https://www.wikidata.org/wiki/</text>
+<text text-anchor="middle" x="2466.91" y="-322.8" font-family="Times,serif" font-size="14.00">getty: https://www.getty.edu/research/tools/vocabularies/aat/</text>
+<text text-anchor="middle" x="2466.91" y="-307.8" font-family="Times,serif" font-size="14.00">viaf: http://viaf.org/viaf/</text>
 <text text-anchor="middle" x="2466.91" y="-292.8" font-family="Times,serif" font-size="14.00">foaf: http://xmlns.com/foaf/0.1/</text>
 <text text-anchor="middle" x="2466.91" y="-277.8" font-family="Times,serif" font-size="14.00">owl: http://www.w3.org/2002/07/owl</text>
 <text text-anchor="middle" x="2466.91" y="-262.8" font-family="Times,serif" font-size="14.00">rdf: http://www.w3.org/2000/01/rdf&#45;schema</text>
@@ -228,17 +228,17 @@
 <polygon fill="black" stroke="black" points="3081.92,-2179.65 3092.1,-2176.69 3082.3,-2172.66 3081.92,-2179.65"/>
 <text text-anchor="middle" x="2682.73" y="-2163.29" font-family="Times,serif" font-size="14.00">owl:sameas</text>
 </g>
-<!-- Rcrm:E57_Material -->
+<!-- Rgetty:300015334 -->
 <g id="node35" class="node">
-<title>Rcrm:E57_Material</title>
-<ellipse fill="none" stroke="blue" cx="3173.51" cy="-2126.49" rx="94.48" ry="18"/>
-<text text-anchor="middle" x="3173.51" y="-2122.79" font-family="Times,serif" font-size="14.00">crm:E57_Material</text>
+<title>Rgetty:300015334</title>
+<ellipse fill="none" stroke="blue" cx="3173.51" cy="-2126.49" rx="90.98" ry="18"/>
+<text text-anchor="middle" x="3173.51" y="-2122.79" font-family="Times,serif" font-size="14.00">getty:300015334</text>
 </g>
-<!-- Rhttps://w3id.org/Assassins&#45;CHreed/place/PalazzoVecchio&#45;&gt;Rcrm:E57_Material -->
+<!-- Rhttps://w3id.org/Assassins&#45;CHreed/place/PalazzoVecchio&#45;&gt;Rgetty:300015334 -->
 <g id="edge41" class="edge">
-<title>Rhttps://w3id.org/Assassins&#45;CHreed/place/PalazzoVecchio&#45;&gt;Rcrm:E57_Material</title>
-<path fill="none" stroke="black" d="M2243.09,-2051.67C2320.47,-2059.52 2417.23,-2069 2503.73,-2076.49 2706.17,-2094.02 2943.41,-2110.89 3073.92,-2119.85"/>
-<polygon fill="black" stroke="black" points="3074.07,-2123.36 3084.28,-2120.56 3074.54,-2116.38 3074.07,-2123.36"/>
+<title>Rhttps://w3id.org/Assassins&#45;CHreed/place/PalazzoVecchio&#45;&gt;Rgetty:300015334</title>
+<path fill="none" stroke="black" d="M2243.09,-2051.67C2320.47,-2059.52 2417.23,-2069 2503.73,-2076.49 2707.73,-2094.15 2947.05,-2111.14 3076.9,-2120.05"/>
+<polygon fill="black" stroke="black" points="3076.99,-2123.57 3087.21,-2120.76 3077.47,-2116.58 3076.99,-2123.57"/>
 <text text-anchor="middle" x="2682.73" y="-2107.29" font-family="Times,serif" font-size="14.00">crm:P45_consists_of</text>
 </g>
 <!-- LPalazzo Vecchio|Datatype: xsd:string -->
@@ -256,17 +256,17 @@
 <polygon fill="black" stroke="black" points="3081.72,-2067.46 3091.81,-2064.24 3081.91,-2060.46 3081.72,-2067.46"/>
 <text text-anchor="middle" x="2682.73" y="-2061.29" font-family="Times,serif" font-size="14.00">dcterms:title</text>
 </g>
-<!-- Rwiki:Q176483 -->
+<!-- Rgetty:300020783 -->
 <g id="node37" class="node">
-<title>Rwiki:Q176483</title>
-<ellipse fill="none" stroke="blue" cx="3173.51" cy="-2006.49" rx="75.29" ry="18"/>
-<text text-anchor="middle" x="3173.51" y="-2002.79" font-family="Times,serif" font-size="14.00">wiki:Q176483</text>
+<title>Rgetty:300020783</title>
+<ellipse fill="none" stroke="blue" cx="3173.51" cy="-2006.49" rx="90.98" ry="18"/>
+<text text-anchor="middle" x="3173.51" y="-2002.79" font-family="Times,serif" font-size="14.00">getty:300020783</text>
 </g>
-<!-- Rhttps://w3id.org/Assassins&#45;CHreed/place/PalazzoVecchio&#45;&gt;Rwiki:Q176483 -->
+<!-- Rhttps://w3id.org/Assassins&#45;CHreed/place/PalazzoVecchio&#45;&gt;Rgetty:300020783 -->
 <g id="edge43" class="edge">
-<title>Rhttps://w3id.org/Assassins&#45;CHreed/place/PalazzoVecchio&#45;&gt;Rwiki:Q176483</title>
-<path fill="none" stroke="black" d="M2346.77,-2029.53C2585,-2022.88 2930.46,-2013.24 3088.23,-2008.84"/>
-<polygon fill="black" stroke="black" points="3088.45,-2012.34 3098.35,-2008.56 3088.25,-2005.34 3088.45,-2012.34"/>
+<title>Rhttps://w3id.org/Assassins&#45;CHreed/place/PalazzoVecchio&#45;&gt;Rgetty:300020783</title>
+<path fill="none" stroke="black" d="M2346.77,-2029.53C2577.65,-2023.09 2909.23,-2013.84 3073.08,-2009.26"/>
+<polygon fill="black" stroke="black" points="3073.26,-2012.76 3083.15,-2008.98 3073.06,-2005.76 3073.26,-2012.76"/>
 <text text-anchor="middle" x="2682.73" y="-2028.29" font-family="Times,serif" font-size="14.00">dbo:architecturalStyle</text>
 </g>
 <!-- Rhttps://w3id.org/Assassins&#45;CHreed/people/ArnolfoDiCambio -->
@@ -399,17 +399,17 @@
 <polygon fill="black" stroke="black" points="2964.41,-1391.64 2974.15,-1387.47 2963.94,-1384.66 2964.41,-1391.64"/>
 <text text-anchor="middle" x="2682.73" y="-1426.29" font-family="Times,serif" font-size="14.00">dcterms:creator</text>
 </g>
-<!-- Rcrm:E55_Type -->
+<!-- Rgetty:300047600 -->
 <g id="node55" class="node">
-<title>Rcrm:E55_Type</title>
-<ellipse fill="none" stroke="blue" cx="3173.51" cy="-1494.49" rx="77.19" ry="18"/>
-<text text-anchor="middle" x="3173.51" y="-1490.79" font-family="Times,serif" font-size="14.00">crm:E55_Type</text>
+<title>Rgetty:300047600</title>
+<ellipse fill="none" stroke="blue" cx="3173.51" cy="-1494.49" rx="90.98" ry="18"/>
+<text text-anchor="middle" x="3173.51" y="-1490.79" font-family="Times,serif" font-size="14.00">getty:300047600</text>
 </g>
-<!-- Rhttps://w3id.org/Assassins&#45;CHreed/sculpture/PerseusWithTheHeadOfMedusa&#45;&gt;Rcrm:E55_Type -->
+<!-- Rhttps://w3id.org/Assassins&#45;CHreed/sculpture/PerseusWithTheHeadOfMedusa&#45;&gt;Rgetty:300047600 -->
 <g id="edge65" class="edge">
-<title>Rhttps://w3id.org/Assassins&#45;CHreed/sculpture/PerseusWithTheHeadOfMedusa&#45;&gt;Rcrm:E55_Type</title>
-<path fill="none" stroke="black" d="M2408.38,-1471.03C2640.33,-1478.15 2941.17,-1487.39 3086.47,-1491.85"/>
-<polygon fill="black" stroke="black" points="3086.56,-1495.35 3096.66,-1492.16 3086.77,-1488.36 3086.56,-1495.35"/>
+<title>Rhttps://w3id.org/Assassins&#45;CHreed/sculpture/PerseusWithTheHeadOfMedusa&#45;&gt;Rgetty:300047600</title>
+<path fill="none" stroke="black" d="M2408.38,-1471.03C2633.59,-1477.95 2923.75,-1486.85 3073.42,-1491.45"/>
+<polygon fill="black" stroke="black" points="3073.41,-1494.95 3083.51,-1491.76 3073.62,-1487.95 3073.41,-1494.95"/>
 <text text-anchor="middle" x="2682.73" y="-1488.29" font-family="Times,serif" font-size="14.00">crm:P2_has_type</text>
 </g>
 <!-- L519 cm|Datatype: xsd:string -->
@@ -577,30 +577,30 @@
 <polygon fill="black" stroke="black" points="2990.38,-1051.15 3000.47,-1047.89 2990.55,-1044.15 2990.38,-1051.15"/>
 <text text-anchor="middle" x="2682.73" y="-1044.29" font-family="Times,serif" font-size="14.00">dcterms:title</text>
 </g>
-<!-- Rwiki:Q3305213 -->
+<!-- Rgetty:300033799 -->
 <g id="node16" class="node">
-<title>Rwiki:Q3305213</title>
-<ellipse fill="none" stroke="blue" cx="3173.51" cy="-987.49" rx="81.49" ry="18"/>
-<text text-anchor="middle" x="3173.51" y="-983.79" font-family="Times,serif" font-size="14.00">wiki:Q3305213</text>
+<title>Rgetty:300033799</title>
+<ellipse fill="none" stroke="blue" cx="3173.51" cy="-987.49" rx="90.98" ry="18"/>
+<text text-anchor="middle" x="3173.51" y="-983.79" font-family="Times,serif" font-size="14.00">getty:300033799</text>
 </g>
-<!-- Rhttps://w3id.org/Assassins&#45;CHreed/painting/RitrovamentoCadavereJacopoDePazzi&#45;&gt;Rwiki:Q3305213 -->
+<!-- Rhttps://w3id.org/Assassins&#45;CHreed/painting/RitrovamentoCadavereJacopoDePazzi&#45;&gt;Rgetty:300033799 -->
 <g id="edge14" class="edge">
-<title>Rhttps://w3id.org/Assassins&#45;CHreed/painting/RitrovamentoCadavereJacopoDePazzi&#45;&gt;Rwiki:Q3305213</title>
-<path fill="none" stroke="black" d="M2152.26,-842.41C2229.69,-866.93 2375.88,-910.42 2503.73,-932.49 2708.84,-967.89 2953.39,-980.67 3082.43,-985.16"/>
-<polygon fill="black" stroke="black" points="3082.55,-988.66 3092.66,-985.5 3082.78,-981.67 3082.55,-988.66"/>
+<title>Rhttps://w3id.org/Assassins&#45;CHreed/painting/RitrovamentoCadavereJacopoDePazzi&#45;&gt;Rgetty:300033799</title>
+<path fill="none" stroke="black" d="M2152.26,-842.41C2229.69,-866.93 2375.88,-910.42 2503.73,-932.49 2704.01,-967.06 2941.9,-980.05 3073.13,-984.83"/>
+<polygon fill="black" stroke="black" points="3073.05,-988.32 3083.16,-985.18 3073.3,-981.33 3073.05,-988.32"/>
 <text text-anchor="middle" x="2682.73" y="-977.29" font-family="Times,serif" font-size="14.00">crm:P2_has_type</text>
 </g>
-<!-- Rwiki:Q174705 -->
+<!-- Rgetty:300178684 -->
 <g id="node17" class="node">
-<title>Rwiki:Q174705</title>
-<ellipse fill="none" stroke="blue" cx="3173.51" cy="-933.49" rx="75.29" ry="18"/>
-<text text-anchor="middle" x="3173.51" y="-929.79" font-family="Times,serif" font-size="14.00">wiki:Q174705</text>
+<title>Rgetty:300178684</title>
+<ellipse fill="none" stroke="blue" cx="3173.51" cy="-933.49" rx="90.98" ry="18"/>
+<text text-anchor="middle" x="3173.51" y="-929.79" font-family="Times,serif" font-size="14.00">getty:300178684</text>
 </g>
-<!-- Rhttps://w3id.org/Assassins&#45;CHreed/painting/RitrovamentoCadavereJacopoDePazzi&#45;&gt;Rwiki:Q174705 -->
+<!-- Rhttps://w3id.org/Assassins&#45;CHreed/painting/RitrovamentoCadavereJacopoDePazzi&#45;&gt;Rgetty:300178684 -->
 <g id="edge15" class="edge">
-<title>Rhttps://w3id.org/Assassins&#45;CHreed/painting/RitrovamentoCadavereJacopoDePazzi&#45;&gt;Rwiki:Q174705</title>
-<path fill="none" stroke="black" d="M2204.96,-841.81C2286.73,-854.49 2402.09,-871.37 2503.73,-882.49 2714.2,-905.51 2963.07,-921.56 3089.62,-928.92"/>
-<polygon fill="black" stroke="black" points="3089.44,-932.42 3099.62,-929.5 3089.84,-925.43 3089.44,-932.42"/>
+<title>Rhttps://w3id.org/Assassins&#45;CHreed/painting/RitrovamentoCadavereJacopoDePazzi&#45;&gt;Rgetty:300178684</title>
+<path fill="none" stroke="black" d="M2204.96,-841.81C2286.73,-854.49 2402.09,-871.37 2503.73,-882.49 2706.59,-904.68 2945.13,-920.39 3075.42,-928.09"/>
+<polygon fill="black" stroke="black" points="3075.58,-931.61 3085.77,-928.7 3075.99,-924.62 3075.58,-931.61"/>
 <text text-anchor="middle" x="2682.73" y="-917.29" font-family="Times,serif" font-size="14.00">a&#45;dd:hasMaterialOrTechnique</text>
 </g>
 <!-- Rhttps://w3id.org/Assassins&#45;CHreed/people/OdoardoBorrani&#45;&gt;Rhttps://w3id.org/Assassins&#45;CHreed/city/Florence -->
