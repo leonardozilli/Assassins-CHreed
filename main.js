@@ -561,7 +561,8 @@ function isInViewport() {
 
 function toggleMenu() {
     document.querySelector('.overmenuicon').addEventListener('click', function () {
-        $(".overmenuitems").slideToggle({direction: "down"});
+        $(".overmenuitems").slideToggle();
+        $(".overmenuitems").css('display', 'flex')
     });
     $( ".overmenuicon" ).click(function() {
     if (  $( this ).css( "transform" ) == 'none' ){

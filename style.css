@@ -182,7 +182,6 @@ section:not(.main_menu) {
 .overmenuitems {
   position: inherit;
   font-size: 1.2rem;
-  display: none;
   top: 36vh;
   left: 82%;
   line-height: 1.4;
@@ -190,9 +189,7 @@ section:not(.main_menu) {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
