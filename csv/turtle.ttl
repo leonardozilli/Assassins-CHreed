@@ -3,8 +3,8 @@
 
 #~ Authority prefixes ~
 @prefix geo: <http://www.geonames.org/>.
-@prefix viaf: <http://viaf.org/viaf/>. 
-@prefix wiki: <https://www.wikidata.org/wiki/>.
+@prefix getty: <https://www.getty.edu/research/tools/vocabularies/aat/>.
+@prefix viaf: <http://viaf.org/viaf/>.
 
 #~ Prefixes ~
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
@@ -47,8 +47,8 @@
     dcterms:coverage <city/Florence>;
     dcterms:date "1864"^^xsd:gYear;
     dcterms:title "Ritrovamento del cadavere di Jacopo de’ Pazzi"^^xsd:string;
-    crm:P2_has_type wiki:Q3305213;
-    a-dd:hasMaterialOrTechnique wiki:Q174705.
+    crm:P2_has_type getty:300033799;
+    a-dd:hasMaterialOrTechnique getty:300178684.
 
 #~ Items of "Ritrovamento del cadavere di Jacopo de’ Pazzi"
 #~ Florence ~
@@ -88,9 +88,9 @@
     rdf:label "Palazzo Vecchio";
     rdf:type a-ip:Building;
     owl:sameas viaf:125014958;
-    crm:P45_consists_of crm:E57_Material;
+    crm:P45_consists_of getty:300015334;
     dcterms:title "Palazzo Vecchio"^^xsd:string;
-    dbo:architecturalStyle wiki:Q176483;
+    dbo:architecturalStyle getty:300020783;
     a-cd:hasAuthor <people/ArnolfoDiCambio>;
     dbo:startDate "1299"^^xsd:gYear;
     dbo:yearOfConstruction "1314"^^xsd:gYear;
@@ -120,7 +120,7 @@
     crm:P53_has_former_or_current_location <place/LoggiaDeiLanzi>;
     schema:dateCreated crm:52_Time-Span;
     dcterms:creator <people/BenvenutoCellini>;
-    crm:P2_has_type crm:E55_Type;
+    crm:P2_has_type getty:300047600;
     crm:P43_has_dimension "519 cm"^^xsd:string;
     crm:P45_consists_of crm:57_Material;
     crm:P129_is_about crm:E1_CRM_Entity;
