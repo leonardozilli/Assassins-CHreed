@@ -60,7 +60,7 @@
               <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label" id="ermodelbutton"
                   onmouseover=subHover(this) onclick="scrollSmoothTo('conceptual_map_er_model')">E/R Model</a></li>
               <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label"
-                  onmouseover=subHover(this) onclick="scrollSmoothTo('metadataanalysis')">Metadata Analysis</a></li>
+                  onmouseover=subHover(this) onclick="scrollSmoothTo('metadata')">Metadata Analysis</a></li>
               <li class="menu_subitem"><img src="images/menu_subitem.png"><a class="submenu_label"
                   id="theoreticalmodelbutton" onmouseover=subHover(this)
                   onclick="scrollSmoothTo('theoretical_enhanced')">Theoretical Model</a></li>
@@ -95,6 +95,28 @@
     </div>
     <div class="subtitle">
       <h5>©Unibo. 2022-2023</h5>
+    </div>
+    <div class="overmenu">
+      <ul class="overmenuitems">
+        <li class="overmenu_label selected" id="domain_overitem" onmouseover="" onclick="scrollSmoothTo('domain')">The Domain</li>
+        <li class="overmenu_label" id="items_overitem" onmouseover="" onclick="scrollSmoothTo('items')">The Items</li>
+        <li class="overmenu_label" id="conceptual_map_er_model_overitem" onmouseover="" onclick="scrollSmoothTo('conceptual_map_er_model')">Conceptual Map</li>
+        <li class="overmenu_label" id="er_model_overitem" onmouseover="" onclick="scrollSmoothTo('conceptual_map_er_model')">E/R Model</li> 
+        <li class="overmenu_label" id="metadata_overitem" onmouseover="" onclick="scrollSmoothTo('metadata')">Metadata Analysis</li>
+        <li class="overmenu_label" id="metadataalignment_overitem" onmouseover="" onclick="scrollSmoothTo('metadataalignment')">Metadata Alignment</li>
+        <li class="overmenu_label" id="theoretical_enhanced_overitem" onmouseover="" onclick="scrollSmoothTo('theoretical_enhanced')">Theoretical Model</li>
+        <li class="overmenu_label" id="enhanced_overitem" onmouseover="" onclick="scrollSmoothTo('theoretical_enhanced')">Enhanced E/R Model</li>
+        <li class="overmenu_label" id="conceptual_model_overitem" onmouseover="" onclick="scrollSmoothTo('conceptual_model')">Conceptual Model</li>
+        <li class="overmenu_label" id="csv_tables_overitem" onmouseover="" onclick="scrollSmoothTo('csv_tables')">Items Description</li>
+        <li class="overmenu_label" id="rdf_production_overitem" onmouseover="" onclick="scrollSmoothTo('rdf_production')">RDF Production</li>
+        <li class="overmenu_label" id="rdf_visualization_overitem" onmouseover="" onclick="scrollSmoothTo('rdf_visualization')">RDF Visualization</li>
+      </ul>
+      <svg class="overmenuicon" xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -10.5 17 17">
+        <path d="M 13 -7 L 15 -5 Q 16 -4 16 -3 L 16 -1 Q 16 0 14 2 L 11 5 Q 10 6 9 6 L 7 6 Q 6 6 5 5 L 1 1 Q 0 0 0 -1 L 0 -3 Q 0 -4 1 -5 L 5 -9 Q 6 -10 7 -10 L 9 -10 Q 10 -10 11 -9 L 13 -7" stroke="#000000" stroke-width="0.7" fill="#ffffffb3"/>
+        <path d="M 2 -2 L 8 -2 L 8 4 L 7.5 4.5 L 1.5 -1.5 L 2 -2" stroke="#000000" stroke-width="0.5" fill="none"/>
+        <path d="M 9.5 -1.5 L 9.5 3.5 L 14 -1.5 M 2.5 -3.5 L 7.5 -8 L 7.5 -3.5 L 2.5 -3.5 " stroke="#000000" stroke-width="0.2" fill=""/>
+        <path d="M 9 -3 L 9 -7 L 9.5 -7.5 L 13.5 -3.5 L 13 -3 L 9 -3" stroke="#000000" stroke-width="0.2" fill=""/>
+      </svg>
     </div>
   </section>
   <section class="domain" id="domain">
@@ -204,8 +226,7 @@
               writings by Leonardo da Vinci. It comprises 1,119 leaves dating from 1478 to 1519, the
               contents covering a great variety of subjects, from flight to weaponry to musical instruments and from
               mathematics to botany. The drawing we selected shows the design for a mechanical
-              wing activated with a special device. In the videogame Assassin's Creed II, we can find a digitalized
-              rendition of the flying machine based on this design sketch.</p>
+              wing activated with a special device. A digitalized rendition based on this sketch can be found in the videogame.</p>
             <span class="gotothe"><a
                 href="https://www.ambrosiana.it/opere/codice-atlantico-codex-atlanticus-f-860-recto/" target="_blank">Go
                 to the item</a></span>
@@ -307,7 +328,7 @@
       </span>
     </div>
       <div class="textarea">
-        <p>The first step was to model our main topic and the 10 items we have chosen to represent the domain of study into a <b>conceptual map</b>, using natural language to create relations between each item and some of the most relevant descriptive characteristics we extracted from them, answering to the questions of <b>who</b>, <b>what</b>, <b>when </b>and <b>where</b>.</p>
+        <p>The first step was to model our main topic and the 10 items we have chosen to represent the domain of study into a <b>conceptual map</b>, using natural language to create relations between each item and some of the most relevant descriptive characteristi cs we extracted from them, answering the questions of <b>who</b>, <b>what</b>, <b>when </b>and <b>where</b>.</p>
         <p>We then translated the conceptual map into a more formal <b>E/R model</b>, abstracting the data and relationships from the previous map into more universal-fitting ones in order to graphically represent our domain employing a more general perspective.</p>
       </div>
     <div class="mapcontainer conceptualmapercontainer">
@@ -666,7 +687,7 @@
       </span>
     </div>
       <div class="textarea">
-        <p>We moved further in our modeling effort by adding a new layer, that of <b>data interpretation</b>. This theoretical model is expressed in natural language and provides additional and more detailed informations about the items, offering a more comprehensive understanding of the entities associated with the central topic.
+        <p>We moved further in our modeling effort by adding a new layer, that of <b>data interpretation</b>. This theoretical model is expressed in natural language and provides additional and more detailed information about the items, offering a more comprehensive understanding of the entities associated with the central topic.
         </p>
         <p>Consequently, we also updated the original E/R model on the basis of the new theoretical model, enhancing its descriptive and informative capabilities by adding the <b>new entities and relationships</b>.</p>
       </div>
@@ -1805,7 +1826,7 @@ We minted the following URIs:</p>
       </div>
     </div>
   </section>
-  <section class="credits">
+  <section class="credits" id="credits">
     <div class="sectitle">
       <span>
         <svg class="sectitle_fig" xmlns="http://www.w3.org/2000/svg" viewBox="-0.1 -3.1 12.2 8.2">
@@ -1820,6 +1841,9 @@ We minted the following URIs:</p>
     </div>
     <div class="members">
       <div class="member">
+        <svg class="imgbackground" viewBox="-0.5 -7.5 15 15">
+          <path d="M 0 -1 L 6 -7 Q 7 -8 8 -7 L 14 -1 Q 15 0 14 1 L 8 7 Q 7 8 6 7 L 0 1 Q -1 0 0 -1" fill="#dddbd7"/>
+        </svg>
         <div class="imgcontainer">
           <img src="images/members/ludi.jpeg" alt="">
         </div>
@@ -1833,6 +1857,9 @@ We minted the following URIs:</p>
         </div>
       </div>
       <div class="member">
+        <svg class="imgbackground" viewBox="-0.5 -7.5 15 15">
+          <path d="M 0 -1 L 6 -7 Q 7 -8 8 -7 L 14 -1 Q 15 0 14 1 L 8 7 Q 7 8 6 7 L 0 1 Q -1 0 0 -1" fill="#dddbd7"/>
+        </svg>
         <div class="imgcontainer">
           <img src="images/members/evan.jpeg" alt="">
         </div>
@@ -1846,6 +1873,9 @@ We minted the following URIs:</p>
         </div>
       </div>
       <div class="member">
+        <svg class="imgbackground" viewBox="-0.5 -7.5 15 15">
+          <path d="M 0 -1 L 6 -7 Q 7 -8 8 -7 L 14 -1 Q 15 0 14 1 L 8 7 Q 7 8 6 7 L 0 1 Q -1 0 0 -1" fill="#dddbd7"/>
+        </svg>
         <div class="imgcontainer">
           <img src="images/members/grace.jpeg" alt="">
         </div>
@@ -1859,10 +1889,10 @@ We minted the following URIs:</p>
         </div>
       </div>
       <div class="member">
+          <svg class="imgbackground" viewBox="-0.5 -7.5 15 15">
+            <path d="M 0 -1 L 6 -7 Q 7 -8 8 -7 L 14 -1 Q 15 0 14 1 L 8 7 Q 7 8 6 7 L 0 1 Q -1 0 0 -1" fill="#dddbd7"/>
+          </svg>
           <div class="imgcontainer">
-            <svg viewBox="-0.5 -7.5 15 15">
-              <path d="M 0 -1 L 6 -7 Q 7 -8 8 -7 L 14 -1 Q 15 0 14 1 L 8 7 Q 7 8 6 7 L 0 1 Q -1 0 0 -1" fill="#a3a19b"/>
-            </svg>
             <img src="images/members/leo.jpg" alt="">
           </div>
           <div class="namemail">
