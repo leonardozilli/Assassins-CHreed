@@ -482,8 +482,8 @@ function selectTab(){
     document.getElementById('theoretical_enhanced_overitem').addEventListener("click", function (e) {
         $('.overmenuitems').children().removeClass('selected');
         $('#theoretical_enhanced_overitem').addClass('selected');
-        document.getElementById('enhancedermodel').classList.remove('hidden');
-        document.getElementById('theoreticalmodel').classList.add('hidden');
+        document.getElementById('theoreticalmodel').classList.remove('hidden');
+        document.getElementById('enhancedermodel').classList.add('hidden');
         Array.from(griditems2).forEach(griditem => griditem.classList.remove('active'));
         tmtab.classList.add('active');
     });
