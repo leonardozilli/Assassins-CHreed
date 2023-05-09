@@ -32,6 +32,7 @@
 ###
 #~ Assassin's Creed II ~
 <game/AssassinsCreedII> a schema:VideoGame;
+    rdf:label "Assassin's Creed II";
     crm:p62_depicts <people/JacopodePazzi>;
     ma-ont:depictsFictionalLocation <place/PalazzoVecchio>;
     foaf:depicts <sculpture/PerseusWithTheHeadOfMedusa>.
